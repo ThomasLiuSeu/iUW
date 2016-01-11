@@ -1,0 +1,92 @@
+<mvc:View controllerName="sap.apf.modeler.ui.controller.configuration"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout">
+	<VBox xmlns="sap.m" id="idform" visible="true" displayInline="false"
+		direction="Column" fitContainer="false" renderType="Div"
+		justifyContent="Start" alignItems="Stretch">
+		<items>
+			<VBox xmlns="sap.m" id="idConfigTitleLayout" visible="true"
+				height="" width="" displayInline="false" direction="Column"
+				fitContainer="false" renderType="Div" justifyContent="Start"
+				alignItems="Stretch">
+				<items>
+
+					<l:Grid id="idCategoryTitleLabelLayout" hSpacing="1"
+						vSpacing="1">
+						<Label xmlns="sap.m" id="idConfigTitleLabel" width="100%"
+							textAlign="Right">
+							<layoutData>
+								<GridData xmlns="sap.ui.layout" span="L3 M3 S10" />
+							</layoutData>
+						</Label>
+						<Input xmlns="sap.m" id="idConfigTitle" editable="true"
+							change="handleChangeDetailValue">
+							<layoutData>
+								<GridData xmlns="sap.ui.layout" span="L7 M9 S12" />
+							</layoutData>
+						</Input>
+					</l:Grid>
+
+					<l:Grid id="idConfigurationIdLabelLayout" hSpacing="1"
+						vSpacing="1">
+						<Label xmlns="sap.m" id="idConfigurationIdLabel" width="100%"
+							textAlign="Right">
+							<layoutData>
+								<GridData xmlns="sap.ui.layout" span="L3 M3 S10" />
+							</layoutData>
+						</Label>
+						<Input xmlns="sap.m" id="idConfigurationId" editable="false">
+							<layoutData>
+								<GridData xmlns="sap.ui.layout" span="L7 M9 S12" />
+							</layoutData>
+						</Input>
+					</l:Grid>
+
+					<l:Grid id="idSemanticObjectLabelLayout" hSpacing="1"
+						vSpacing="1">
+						<Label xmlns="sap.m" id="idSemanticObjectLabel" width="100%"
+							textAlign="Right">
+							<layoutData>
+								<GridData xmlns="sap.ui.layout" span="L3 M3 S10" />
+							</layoutData>
+						</Label>
+						<Input xmlns="sap.m" id="idSemanticObject" editable="false">
+							<layoutData>
+								<GridData xmlns="sap.ui.layout" span="L7 M9 S12" />
+							</layoutData>
+						</Input>
+					</l:Grid>
+
+					<l:Grid id="idNoOfCategoriesLabelLayout" hSpacing="1"
+						vSpacing="1">
+						<Label xmlns="sap.m" id="idNoOfCategoriesLabel" width="100%"
+							textAlign="Right">
+							<layoutData>
+								<GridData xmlns="sap.ui.layout" span="L3 M3 S10" />
+							</layoutData>
+						</Label>
+						<Input xmlns="sap.m" id="idNoOfCategories" editable="false">
+							<layoutData>
+								<GridData xmlns="sap.ui.layout" span="L7 M9 S12" />
+							</layoutData>
+						</Input>
+					</l:Grid>
+
+					<l:Grid id="idNoOfStepsLabelLayout" hSpacing="1" vSpacing="1">
+						<Label xmlns="sap.m" id="idNoOfStepsLabel" width="100%"
+							textAlign="Right">
+							<layoutData>
+								<GridData xmlns="sap.ui.layout" span="L3 M3 S10" />
+							</layoutData>
+						</Label>
+						<Input xmlns="sap.m" id="idNoOfSteps" editable="false">
+							<layoutData>
+								<GridData xmlns="sap.ui.layout" span="L7 M9 S12" />
+							</layoutData>
+						</Input>
+					</l:Grid>
+
+				</items>
+			</VBox>
+		</items>
+	</VBox>
+</mvc:View>

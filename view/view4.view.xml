@@ -1,0 +1,152 @@
+<core:View xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" controllerName="view.view4">
+	<Page showSubHeader="true" title="Health Page" titleLevel="Auto" showNavButton="true" navButtonPress="onNavigation">
+		<content>
+		<GroupHeaderListItem counter="0" id="__item2"/>
+		<VBox width="100%" direction="Column" id="__vbox0">
+		    <items>
+		        <Bar id="__bar0">
+		    <customData>
+		        <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true" id="__data1"/>
+		    </customData>
+		<contentLeft>
+		    <Button text="" width="100px" id="__button0" icon="sap-icon://my-view"/>
+		</contentLeft>
+		<contentRight>
+		    <Button text="" width="100px" id="__button1" iconFirst="false" icon="sap-icon://notification-2"/>
+		</contentRight>
+		<contentMiddle>
+		    <Label text="House" width="100%" id="__label0" textAlign="Center" design="Bold"/>
+		</contentMiddle>
+		</Bar>
+		    </items>
+		</VBox>
+		<IconTabBar selectedKey="__filter1" id="__bar1" stretchContentHeight="false" upperCase="false" applyContentPadding="false" backgroundDesign="Solid" expandable="true" expanded="true" showSelection="true">
+		    <items>
+		        <IconTabFilter text="heart rate" count="10" icon="sap-icon://task" iconColor="Default" id="__filter1" showAll="false" design="Horizontal">
+		            <content>
+		            <VBox width="100%" direction="Column" id="__vbox1">
+		                <items>
+		                    <Panel id="__panel0" width="100%" expandable="true" headerText="chart" backgroundDesign="Translucent">
+		                        <customData>
+		                            <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true" id="__data9"/>
+		                        </customData>
+		                    <content>
+		                        <Image width="140px" height="140px" id="__image1"/>
+		                    </content>
+		                    </Panel>
+		                    <Panel id="__panel1">
+		                        <customData>
+		                            <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true" id="__data14"/>
+		                        </customData>
+		                    <content>
+		                        <Label text="suggestions" width="100%" id="__label8" design="Bold" textAlign="Center"/>
+		                        <Text text=" You should eat three healthy meals every day. You shouldn't eat food with lots of sugar, oil and fat because they are not good for your health. Don't eat too much junk food. You should eat enough vegetables and fruit because they are rice in vitamins. You should drink enough milk and water.  You should get enough sleep. If you don't have enough sleep, you will feel tired and you will not concentrate better. You shouln't drink, smoke and take drugs. Don't play computers too long. Wash your hand before meals and do exercise every day." maxLines="0" id="__text15"/>
+		                    </content>
+		                    </Panel>
+		                </items>
+		            </VBox>
+		            </content>
+		        </IconTabFilter>
+		        <IconTabFilter text="temperature" count="10" icon="sap-icon://temperature" iconColor="Default" id="__filter3" design="Horizontal">
+		            <content>
+		            <VBox width="100%" direction="Column">
+		                <items>
+		                    <Panel>
+		                        <customData>
+		                            <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true" id="__data10"/>
+		                            <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"/></customData>
+		                        <content>
+		                            <Image width="140px" height="140px"/>
+		                        </content></Panel>
+		                    <Panel>
+		                        <customData>
+		                            <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true" id="__data11"/>
+		                            <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"/></customData>
+		                        <content>
+		                            <Label design="Bold" text="suggestions" textAlign="Center" width="100%"/>
+		                            <Text text=" You should eat three healthy meals every day. You shouldn't eat food with lots of sugar, oil and fat because they are not good for your health. Don't eat too much junk food. You should eat enough vegetables and fruit because they are rice in vitamins. You should drink enough milk and water.  You should get enough sleep. If you don't have enough sleep, you will feel tired and you will not concentrate better. You shouln't drink, smoke and take drugs. Don't play computers too long. Wash your hand before meals and do exercise every day." maxLines="0"/></content></Panel></items>
+		            </VBox>
+		            </content>
+		        </IconTabFilter>
+		        <IconTabFilter text="Open" count="10" icon="sap-icon://task" iconColor="Default" id="__filter9" design="Horizontal">
+		            <content>
+		            <VBox width="100%" direction="Column">
+		                <items>
+		                    <Panel>
+		                        <customData>
+		                            <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true" id="__data12"/>
+		                            <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"/></customData>
+		                        <content>
+		                            <Image width="140px" height="140px"/>
+		                        </content></Panel>
+		                    <Panel>
+		                        <customData>
+		                            <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true" id="__data13"/>
+		                            <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"/></customData>
+		                        <content>
+		                            <Label design="Bold" text="suggestions" textAlign="Center" width="100%"/>
+		                            <Text text=" You should eat three healthy meals every day. You shouldn't eat food with lots of sugar, oil and fat because they are not good for your health. Don't eat too much junk food. You should eat enough vegetables and fruit because they are rice in vitamins. You should drink enough milk and water.  You should get enough sleep. If you don't have enough sleep, you will feel tired and you will not concentrate better. You shouln't drink, smoke and take drugs. Don't play computers too long. Wash your hand before meals and do exercise every day." maxLines="0"/></content></Panel></items>
+		            </VBox>
+		            </content>
+		        </IconTabFilter>
+		        <IconTabFilter text="Open" count="10" icon="sap-icon://task" iconColor="Default" id="__filter5" design="Horizontal">
+		            <content>
+		            <VBox width="100%" direction="Column">
+		                <items>
+		                    <Panel>
+		                        <customData>
+		                            <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true" id="__data15"/>
+		                            <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"/></customData>
+		                        <content>
+		                            <Image width="140px" height="140px"/>
+		                        </content></Panel>
+		                    <Panel>
+		                        <customData>
+		                            <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true" id="__data16"/>
+		                            <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"/></customData>
+		                        <content>
+		                            <Label design="Bold" text="suggestions" textAlign="Center" width="100%"/>
+		                            <Text text=" You should eat three healthy meals every day. You shouldn't eat food with lots of sugar, oil and fat because they are not good for your health. Don't eat too much junk food. You should eat enough vegetables and fruit because they are rice in vitamins. You should drink enough milk and water.  You should get enough sleep. If you don't have enough sleep, you will feel tired and you will not concentrate better. You shouln't drink, smoke and take drugs. Don't play computers too long. Wash your hand before meals and do exercise every day." maxLines="0"/></content></Panel></items>
+		            </VBox>
+		            </content>
+		        </IconTabFilter>
+		        <IconTabFilter text="Shipped" count="5" icon="sap-icon://shipping-status" iconColor="Default" id="__filter2" design="Horizontal">
+		            <content>
+		            <VBox width="100%" direction="Column">
+		                <items>
+		                    <Panel>
+		                        <customData>
+		                            <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true" id="__data17"/>
+		                            <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"/></customData>
+		                        <content>
+		                            <Image width="140px" height="140px"/>
+		                        </content></Panel>
+		                    <Panel>
+		                        <customData>
+		                            <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true" id="__data18"/>
+		                            <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"/></customData>
+		                        <content>
+		                            <Label design="Bold" text="suggestions" textAlign="Center" width="100%"/>
+		                            <Text text=" You should eat three healthy meals every day. You shouldn't eat food with lots of sugar, oil and fat because they are not good for your health. Don't eat too much junk food. You should eat enough vegetables and fruit because they are rice in vitamins. You should drink enough milk and water.  You should get enough sleep. If you don't have enough sleep, you will feel tired and you will not concentrate better. You shouln't drink, smoke and take drugs. Don't play computers too long. Wash your hand before meals and do exercise every day." maxLines="0"/></content></Panel></items>
+		            </VBox>
+		            </content>
+		        </IconTabFilter></items>
+		</IconTabBar>
+		</content>
+	<footer>
+	    <Bar design="Footer">
+		    <customData>
+		        <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true" id="__data5"/>
+		        <core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"/></customData>
+		    <contentLeft>
+		        <Button text="Ambulance" width="100px"/>
+		    </contentLeft>
+		    <contentMiddle>
+		        <Button text="Family" width="100px"/>
+		    </contentMiddle>
+		    <contentRight>
+		        <Button text="Doctor" width="100px"/>
+		    </contentRight></Bar>
+	</footer>
+	</Page>
+</core:View>

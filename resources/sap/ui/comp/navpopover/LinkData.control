@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>navpopover/LinkData</name>
+    <derived/>
+    <author>Benjamin Spieler</author>
+    <documentation>Stores display text together with a navigation target hyperlink.</documentation>
+    <baseType>sap.ui.core/Element</baseType>
+    <properties>
+        <property since="1.28.0" group="Misc" type="sap.ui.core/string" name="text">
+            <documentation>Text which can be displayed on the UI</documentation>
+        </property>
+        <property since="1.28.0" group="Misc" type="sap.ui.core/string" name="href">
+            <documentation>Destination link for a navigation operation.</documentation>
+        </property>
+    </properties>
+</control>

@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+    <name>AnchorBar</name>
+    <author>SAP SE</author>
+    <documentation>A AnchorBar is bar that displays content differently between desktop/tablet and phone.</documentation>
+
+    <baseType>sap.m/Toolbar</baseType>
+    <properties>
+        <property name="showPopover" type="sap.ui.core/boolean" defaultValue="true">
+            <documentation>Show or not the popover when clicking on first level buttons</documentation>
+        </property>
+    </properties>
+    <associations>
+        <association cardinality="0..1" name="selectedButton" type="sap.m/Button">
+            <documentation>The button that represents the section being scrolled by the user.</documentation>
+        </association>
+    </associations>
+    <methods>
+        <method name="scrollToSection" type="ObjectPageLayout">
+            <documentation>Scrolls to the given section</documentation>
+            <parameters>
+                <parameter name="id" type="sap.ui.core/string">
+                    <documentation>The section id to scroll to</documentation>
+                </parameter>
+                <parameter name="duration" type="sap.ui.core/int">
+                    <documentation>Scroll duration (in ms). Default value is 0</documentation>
+                </parameter>
+            </parameters>
+        </method>
+        <method name="getScrollDelegate" type="sap.ui.core/object">
+            <documentation>Returns a sap.ui.core.delegate.ScrollEnablement object used to handle scrolling</documentation>
+        </method>
+    </methods>
+</control>

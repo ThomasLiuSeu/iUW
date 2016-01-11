@@ -1,0 +1,44 @@
+<mvc:View controllerName="sap.apf.modeler.ui.controller.category"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout">
+	<VBox xmlns="sap.m" id="idform" visible="true"
+		displayInline="false" direction="Column" fitContainer="false"
+		renderType="Div" justifyContent="Start" alignItems="Stretch">
+		<items>
+			<VBox xmlns="sap.m" id="idCategoryTitleLayout" visible="true"
+				width="100%" displayInline="false" direction="Column"
+				fitContainer="false" renderType="Div" justifyContent="Start"
+				alignItems="Stretch">
+				<items>
+
+					<l:Grid id="idCategoryTitleLabelLayout" hSpacing="1">
+						<Label xmlns="sap.m" id="idCategoryTitleLabel" width="100%" textAlign="Right">
+							<layoutData>
+								<GridData xmlns="sap.ui.layout" span="L2 M3 S10" />
+							</layoutData>
+						</Label>
+						<Input xmlns="sap.m" id="idCategoryTitle" editable="true"
+							change="handleChangeDetailValue">
+							<layoutData>
+								<GridData xmlns="sap.ui.layout" span="L7 M9 S12" />
+							</layoutData>
+						</Input>
+					</l:Grid>
+
+					<l:Grid id="idTotalStepsLabelLayout" hSpacing="1">
+						<Label xmlns="sap.m" id="idTotalStepsLabel" width="100%" textAlign="Right">
+							<layoutData>
+								<GridData xmlns="sap.ui.layout" span="L2 M3 S10" />
+							</layoutData>
+						</Label>
+						<Input xmlns="sap.m" id="idTotalSteps" editable="false">
+							<layoutData>
+								<GridData xmlns="sap.ui.layout" span="L7 M9 S12" />
+							</layoutData>
+						</Input>
+					</l:Grid>
+
+				</items>
+			</VBox>
+		</items>
+	</VBox>
+</mvc:View>

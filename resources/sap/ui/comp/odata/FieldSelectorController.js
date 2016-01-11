@@ -1,0 +1,6 @@
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5)
+
+(c) Copyright 2009-2015 SAP SE. All rights reserved
+ */
+sap.ui.define(["jquery.sap.global","./FieldSelectorModelConverter"],function(q,M){"use strict";var F=function(){this._oModelConverter=null;this._oFields={};};F.prototype.init=function(o,e,i){if(!o){q.sap.log.error("oModel has to be set otherwise nothing will be displayed");}if(!e){q.sap.log.error("sEntityTypes has to be set otherwise nothing will be displayed");}this._oModelConverter=new M(o);var c=this._oModelConverter.getConvertedModel(e,i);this._sortFields(c);};F.prototype._sortFields=function(c){var t=this;q.each(c,function(k,v){t._oFields[k]=v.sort(function(a,b){if(a.fieldLabel>b.fieldLabel){return 1;}if(a.fieldLabel<b.fieldLabel){return-1;}return 0;});});};F.prototype.getFields=function(){return this._oFields;};F.prototype.getEntityTypes=function(){return this._oModelConverter.getEntityTypes();};F.prototype.getMetaDataAnalyzer=function(){return this._oModelConverter.getMetaDataAnalyzer();};F.prototype.getMaxEntitySetSize=function(){var m=0;if(this._oFields){q.each(this._oFields,function(k,v){if(v&&v.length){if(v.length>m){m=v.length;}}});}return m;};F.prototype.destroy=function(){if(this._oModelConverter){this._oModelConverter.destroy();}this._oModelConverter=null;this._oFields=null;};return F;},true);

@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<library  version="2.0" name="sap.ndc">
+  <module name="sap/ndc/BarcodeScanDialog.fragment.xml" size="550">
+    <requires>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/m/Input.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/Button.js"/>
+    </requires>
+  </module>
+  <module name="sap/ndc/BarcodeScanner.js" size="9797" compressedSize="2868">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;        (c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ndc/BarcodeScannerButton.js" size="4228" compressedSize="1644">
+    <description>Provides control sap.ndc.BarcodeScannerButton.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ndc/BarcodeScanner.js"/>
+      <module name="sap/ndc/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+    </requires>
+  </module>
+  <module name="sap/ndc/BarcodeScannerButtonRenderer.js" size="1011" compressedSize="377">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;        (c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ndc/library.js" size="833" compressedSize="447">
+    <description>Initialization Code and shared classes of library sap.ndc.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/ui/core/library.js"/>
+    </requires>
+  </module>
+  <module name="sap/ndc/messagebundle.properties" size="552">
+  </module>
+  <module name="sap/ndc/messagebundle_de.properties" size="299">
+  </module>
+  <module name="sap/ndc/messagebundle_en.properties" size="299">
+  </module>
+  <module name="sap/ndc/messagebundle_en_US_sappsd.properties" size="865">
+  </module>
+  <module name="sap/ndc/messagebundle_en_US_saptrc.properties" size="551">
+  </module>
+  <module name="sap/ndc/messagebundle_sh.properties" size="300">
+  </module>
+</library>

@@ -1,0 +1,80 @@
+<mvc:View controllerName="sap.apf.modeler.ui.controller.navigationTarget"
+	xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	xmlns:l="sap.ui.layout">
+	<VBox xmlns="sap.m" id="idform" visible="true" displayInline="false"
+		direction="Column" fitContainer="false" renderType="Div"
+		justifyContent="Start" alignItems="Stretch">
+		<items>
+			<VBox xmlns="sap.m" id="idNavigationTargetTitleLayout" visible="true"
+				width="100%" displayInline="false" direction="Column" fitContainer="false"
+				renderType="Div" justifyContent="Start" alignItems="Stretch">
+				<items>
+					<VBox xmlns="sap.m" id="idNavigationTargetLayout" visible="true"
+						displayInline="false" direction="Column" fitContainer="false"
+						renderType="Div" justifyContent="Start" alignItems="Stretch">
+						<items>
+							<l:Grid id="idSemanticObject" hSpacing="1" vSpacing="1">
+								<Label xmlns="sap.m" id="idSemanticObjectLabel" width="100%"
+									textAlign="Right">
+									<layoutData>
+										<GridData xmlns="sap.ui.layout" span="L2 M3 S10" />
+									</layoutData>
+								</Label>
+								<ComboBox xmlns="sap.m" id="idSemanticObjectField"
+									visible="true" enabled="true" width="100%" maxWidth="100%"
+									type="Default" autoAdjustWidth="false"
+									change="handleChangeSemanticObjectValue" items="{/aAllSemanticObjects}">
+									<core:Item key="{semanticObjectKey}" text="{semanticObjectName}" />
+									<layoutData>
+										<GridData xmlns="sap.ui.layout" span="L7 M7 S7" />
+									</layoutData>
+								</ComboBox>
+							</l:Grid>
+							<l:Grid id="idAction" hSpacing="1" vSpacing="1">
+								<Label xmlns="sap.m" id="idActionLabel" width="100%"
+									textAlign="Right">
+									<layoutData>
+										<GridData xmlns="sap.ui.layout" span="L2 M3 S10" />
+									</layoutData>
+								</Label>
+								<ComboBox xmlns="sap.m" id="idActionField" visible="true"
+									enabled="true" width="100%" maxWidth="100%" type="Default"
+									autoAdjustWidth="false" change="handleChangeofAction" items="{/aActions}">
+									<core:Item key="{id}" text="{id}" />
+									<layoutData>
+										<GridData xmlns="sap.ui.layout" span="L7 M7 S7" />
+									</layoutData>
+								</ComboBox>
+							</l:Grid>
+							<l:Grid id="idDescriptionLabelLayout" hSpacing="1">
+								<Label xmlns="sap.m" id="idDescriptionLabel" width="100%"
+									textAlign="Right">
+									<layoutData>
+										<GridData xmlns="sap.ui.layout" span="L2 M3 S10" />
+									</layoutData>
+								</Label>
+								<Input xmlns="sap.m" id="idDescription" editable="false">
+									<layoutData>
+										<GridData xmlns="sap.ui.layout" span="L7 M9 S12" />
+									</layoutData>
+								</Input>
+							</l:Grid>
+						</items>
+					</VBox>
+
+					<!-- <Label xmlns="sap.m" id="idNavigationTargetTypeHeader"></Label> 
+						<VBox xmlns="sap.m" id="dNavigationTargetTypeLayout" visible="true" displayInline="false" 
+						direction="Column" fitContainer="false" renderType="Div" justifyContent="Start" 
+						alignItems="Stretch"> <items> <l:Grid id="idNavigationTargetType" hSpacing="1" 
+						vSpacing="1"> <Label xmlns="sap.m" id="idNavigationTargetTypeLabel" width="100%" 
+						textAlign="Right"> <layoutData> <GridData xmlns="sap.ui.layout" span="L2 
+						M3 S10" /> </layoutData> </Label> <Select xmlns="sap.m" id="idNavigationTargetTypeField" 
+						visible="true" enabled="true" width="100%" maxWidth="100%" type="Default" 
+						autoAdjustWidth="false" change="handleChangeOfNavigationTargetType" items="{/aAllTypes}"> 
+						<core:Item key="{typeKey}" text="{typeName}" /> <layoutData> <GridData xmlns="sap.ui.layout" 
+						span="L7 M9 S12" /> </layoutData> </Select> </l:Grid> </items> </VBox> -->
+				</items>
+			</VBox>
+		</items>
+	</VBox>
+</mvc:View>

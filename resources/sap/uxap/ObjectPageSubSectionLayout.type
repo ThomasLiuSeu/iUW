@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<simple-type xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+    <name>ObjectPageSubSectionLayout</name>
+    <author>SAP SE</author>
+    <documentation>Used by the ObjectPagSubSection control to define which layout to apply.</documentation>
+    <baseType>sap.ui.core/string</baseType>
+    <enumeration>
+        <value name="TitleOnTop">
+            <documentation>TitleOnTop: title and actions on top of the block area.</documentation>
+        </value>
+        <value name="TitleOnLeft">
+            <documentation>TitleOnLeft: title and actions on the left, inside the block area.</documentation>
+        </value>
+    </enumeration>
+</simple-type>

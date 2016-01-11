@@ -1,0 +1,78 @@
+{
+  "modules" : [
+    {
+      "name" : "sap/ndc/BarcodeScanDialog.fragment.xml",
+      "size" : 550,
+      "required" : ["sap/ui/core/Fragment.js", "sap/m/Dialog.js", "sap/m/Input.js", "sap/m/Text.js", "sap/m/Button.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/BarcodeScanner.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n        (c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 9797,
+      "compressedSize" : 2868,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/BarcodeScannerButton.js",
+      "description" : "Provides control sap.ndc.BarcodeScannerButton.",
+      "size" : 4228,
+      "compressedSize" : 1644,
+      "required" : ["jquery.sap.global.js", "sap/ndc/BarcodeScanner.js", "sap/ndc/library.js", "sap/ui/core/Control.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/BarcodeScannerButtonRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n        (c) Copyright 2009-2015 SAP SE. All rights reserved",
+      "size" : 1011,
+      "compressedSize" : 377,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/library.js",
+      "description" : "Initialization Code and shared classes of library sap.ndc.",
+      "size" : 833,
+      "compressedSize" : 447,
+      "required" : ["jquery.sap.global.js", "sap/m/library.js", "sap/ui/core/library.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle.properties",
+      "size" : 552,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_de.properties",
+      "size" : 299,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_en.properties",
+      "size" : 299,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_en_US_sappsd.properties",
+      "size" : 865,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_en_US_saptrc.properties",
+      "size" : 551,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ndc/messagebundle_sh.properties",
+      "size" : 300,
+      "required" : [],
+      "includes" : []
+    }
+  ]
+}

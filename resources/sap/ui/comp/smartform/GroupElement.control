@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>smartform/GroupElement</name>
+    <derived/>
+    <author>Alexander Fürbach</author>
+    <documentation>A GroupElement is a combination of one label and different controls associated to this label.</documentation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property group="Misc" type="sap.ui.core/string" name="label">
+            <documentation>Label of the fields/elements. If not set the control will use label from metadata.</documentation>
+        </property>
+        <property group="Misc" defaultValue="0" type="sap.ui.core/int" name="elementForLabel">
+            <documentation>Index of element to be used for label determination</documentation>
+        </property>
+    </properties>
+    <aggregations default="elements">
+        <aggregation cardinality="0..n" type="sap.ui.core/Control" name="elements">
+            <documentation>Aggregation of controls to be displayed together with a label.</documentation>
+        </aggregation>
+    </aggregations>
+</control>

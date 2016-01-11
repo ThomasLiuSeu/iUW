@@ -1,0 +1,669 @@
+{
+  "modules" : [
+    {
+      "name" : "sap/ui/vbm/AnalyticMap.js",
+      "description" : "Provides control sap.ui.vbm.AnalyticMap.",
+      "size" : 33379,
+      "compressedSize" : 9830,
+      "required" : ["sap/ui/vbm/library.js", "sap/ui/vbm/GeoMap.js", "sap/ui/core/theming/Parameters.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/AnalyticMapRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5) (c) Copyright 2009-2012 SAP AG. All rights reserved",
+      "size" : 1220,
+      "compressedSize" : 364,
+      "required" : ["sap/ui/vbm/VBIRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/Area.js",
+      "description" : "Provides control sap.ui.vbm.Area.",
+      "size" : 17779,
+      "compressedSize" : 999,
+      "required" : ["sap/ui/vbm/library.js", "sap/ui/vbm/VoBase.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/Areas.js",
+      "description" : "Provides control sap.ui.vbm.Areas.",
+      "size" : 22660,
+      "compressedSize" : 3404,
+      "required" : ["sap/ui/vbm/library.js", "sap/ui/vbm/VoAggregation.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/Box.js",
+      "description" : "Provides control sap.ui.vbm.Box.",
+      "size" : 13797,
+      "compressedSize" : 979,
+      "required" : ["sap/ui/vbm/library.js", "sap/ui/vbm/VoBase.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/Boxes.js",
+      "description" : "Provides control sap.ui.vbm.Boxes.",
+      "size" : 17792,
+      "compressedSize" : 3021,
+      "required" : ["sap/ui/vbm/library.js", "sap/ui/vbm/VoAggregation.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/Circle.js",
+      "description" : "Provides control sap.ui.vbm.Circle.",
+      "size" : 14632,
+      "compressedSize" : 1051,
+      "required" : ["sap/ui/vbm/library.js", "sap/ui/vbm/VoBase.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/Circles.js",
+      "description" : "Provides control sap.ui.vbm.Circles.",
+      "size" : 18516,
+      "compressedSize" : 3130,
+      "required" : ["sap/ui/vbm/library.js", "sap/ui/vbm/VoAggregation.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/Container.js",
+      "description" : "Provides control sap.ui.vbm.Container.",
+      "size" : 11583,
+      "compressedSize" : 1477,
+      "required" : ["sap/ui/vbm/library.js", "sap/ui/vbm/VoBase.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/Containers.js",
+      "description" : "Provides control sap.ui.vbm.Containers.",
+      "size" : 15291,
+      "compressedSize" : 2560,
+      "required" : ["sap/ui/vbm/library.js", "sap/ui/vbm/VoAggregation.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/DragSource.js",
+      "description" : "Provides control sap.ui.vbm.DragSource.",
+      "size" : 3769,
+      "compressedSize" : 390,
+      "required" : ["sap/ui/vbm/library.js", "sap/ui/core/Element.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/DropTarget.js",
+      "description" : "Provides control sap.ui.vbm.DropTarget.",
+      "size" : 3769,
+      "compressedSize" : 390,
+      "required" : ["sap/ui/vbm/library.js", "sap/ui/core/Element.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/GeoCircle.js",
+      "description" : "Provides control sap.ui.vbm.GeoCircle.",
+      "size" : 14953,
+      "compressedSize" : 1062,
+      "required" : ["sap/ui/vbm/library.js", "sap/ui/vbm/VoBase.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/GeoCircles.js",
+      "description" : "Provides control sap.ui.vbm.GeoCircles.",
+      "size" : 18270,
+      "compressedSize" : 3079,
+      "required" : ["sap/ui/vbm/library.js", "sap/ui/vbm/VoAggregation.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/GeoMap.js",
+      "description" : "Provides control sap.ui.vbm.GeoMap.",
+      "size" : 46153,
+      "compressedSize" : 13253,
+      "required" : ["sap/ui/vbm/library.js", "sap/ui/vbm/VBI.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/GeoMapRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5) (c) Copyright 2009-2012 SAP AG. All rights reserved",
+      "size" : 895,
+      "compressedSize" : 349,
+      "required" : ["sap/ui/vbm/VBIRenderer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/Legend.js",
+      "description" : "Provides control sap.ui.vbm.Legend.",
+      "size" : 9264,
+      "compressedSize" : 1453,
+      "required" : ["sap/ui/vbm/library.js", "sap/ui/core/Element.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/LegendItem.js",
+      "description" : "Provides control sap.ui.vbm.LegendItem.",
+      "size" : 5197,
+      "compressedSize" : 498,
+      "required" : ["sap/ui/vbm/library.js", "sap/ui/core/Element.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/Pie.js",
+      "description" : "Provides control sap.ui.vbm.Pie.",
+      "size" : 15123,
+      "compressedSize" : 949,
+      "required" : ["sap/ui/vbm/library.js", "sap/ui/vbm/VoBase.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/PieItem.js",
+      "description" : "Provides control sap.ui.vbm.PieItem.",
+      "size" : 6758,
+      "compressedSize" : 503,
+      "required" : ["sap/ui/vbm/library.js", "sap/ui/core/Element.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/Pies.js",
+      "description" : "Provides control sap.ui.vbm.Pies.",
+      "size" : 18770,
+      "compressedSize" : 3181,
+      "required" : ["sap/ui/vbm/library.js", "sap/ui/vbm/VoAggregation.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/Region.js",
+      "description" : "Provides control sap.ui.vbm.Region.",
+      "size" : 9555,
+      "compressedSize" : 567,
+      "required" : ["sap/ui/vbm/library.js", "sap/ui/core/Element.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/Resource.js",
+      "description" : "Provides control sap.ui.vbm.Resource.",
+      "size" : 5606,
+      "compressedSize" : 492,
+      "required" : ["sap/ui/vbm/library.js", "sap/ui/core/Element.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/Route.js",
+      "description" : "Provides control sap.ui.vbm.Route.",
+      "size" : 22376,
+      "compressedSize" : 1397,
+      "required" : ["sap/ui/vbm/library.js", "sap/ui/vbm/VoBase.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/Routes.js",
+      "description" : "Provides control sap.ui.vbm.Routes.",
+      "size" : 27410,
+      "compressedSize" : 4455,
+      "required" : ["sap/ui/vbm/library.js", "sap/ui/vbm/VoAggregation.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/Spot.js",
+      "description" : "Provides control sap.ui.vbm.Spot.",
+      "size" : 20205,
+      "compressedSize" : 1198,
+      "required" : ["sap/ui/vbm/library.js", "sap/ui/vbm/VoBase.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/Spots.js",
+      "description" : "Provides control sap.ui.vbm.Spots.",
+      "size" : 26369,
+      "compressedSize" : 4181,
+      "required" : ["sap/ui/vbm/library.js", "sap/ui/vbm/VoAggregation.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/VBI.js",
+      "description" : "Provides control sap.ui.vbm.VBI.",
+      "size" : 38770,
+      "compressedSize" : 7153,
+      "required" : ["sap/ui/vbm/library.js", "sap/ui/core/Control.js", "sap/ui/vbm/lib/sapvbi.js", "sap/ui/thirdparty/jqueryui/jquery-ui-core.js", "sap/ui/thirdparty/jqueryui/jquery-ui-widget.js", "sap/ui/thirdparty/jqueryui/jquery-ui-mouse.js", "sap/ui/thirdparty/jqueryui/jquery-ui-draggable.js", "sap/ui/core/IconPool.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/VBIRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5) (c) Copyright 2009-2012 SAP AG. All rights reserved",
+      "size" : 2743,
+      "compressedSize" : 1094,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/VoAggregation.js",
+      "description" : "Provides control sap.ui.vbm.VoAggregation.",
+      "size" : 12234,
+      "compressedSize" : 1574,
+      "required" : ["sap/ui/vbm/library.js", "sap/ui/core/Element.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/VoBase.js",
+      "description" : "Provides control sap.ui.vbm.VoBase.",
+      "size" : 23437,
+      "compressedSize" : 1303,
+      "required" : ["sap/ui/vbm/library.js", "sap/ui/core/Element.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/lib/sapactions.js",
+      "size" : 7297,
+      "compressedSize" : 2087,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/lib/sapautomations.js",
+      "size" : 12189,
+      "compressedSize" : 4772,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/lib/sapconfig.js",
+      "size" : 1367,
+      "compressedSize" : 380,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/lib/sapdataprovider.js",
+      "size" : 78096,
+      "compressedSize" : 24892,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/lib/sapevents.js",
+      "size" : 73602,
+      "compressedSize" : 27395,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/lib/sapgeolocation.js",
+      "size" : 2860,
+      "compressedSize" : 1170,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/lib/sapgeomath.js",
+      "size" : 12536,
+      "compressedSize" : 3304,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/lib/sapgeotool.js",
+      "size" : 9956,
+      "compressedSize" : 1724,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/lib/sapheatmap.js",
+      "size" : 17885,
+      "compressedSize" : 10630,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/lib/sapmaplayer.js",
+      "size" : 8733,
+      "compressedSize" : 3132,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/lib/sapmapmanager.js",
+      "size" : 19822,
+      "compressedSize" : 6455,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/lib/sapmapprovider.js",
+      "size" : 13857,
+      "compressedSize" : 5031,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/lib/sapnavigation.js",
+      "size" : 23780,
+      "compressedSize" : 14843,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/lib/sapparsing.js",
+      "size" : 9796,
+      "compressedSize" : 4438,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/lib/sapprojection.js",
+      "size" : 1546,
+      "compressedSize" : 683,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/lib/sapresources.js",
+      "size" : 5849,
+      "compressedSize" : 3051,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/lib/sapscale.js",
+      "size" : 8937,
+      "compressedSize" : 4042,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/lib/sapscene.js",
+      "size" : 128763,
+      "compressedSize" : 48701,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/lib/saputilities.js",
+      "size" : 62130,
+      "compressedSize" : 24694,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/lib/sapvbcluster.js",
+      "size" : 51330,
+      "compressedSize" : 19506,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/lib/sapvbi.js",
+      "size" : 6829,
+      "compressedSize" : 2285,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/lib/sapvbicontext.js",
+      "size" : 9542,
+      "compressedSize" : 3271,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/lib/sapvbmenu.js",
+      "size" : 5962,
+      "compressedSize" : 2542,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/lib/sapvobase.js",
+      "size" : 214761,
+      "compressedSize" : 78678,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/lib/sapwindow.js",
+      "size" : 37819,
+      "compressedSize" : 14651,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/library.js",
+      "description" : "Initialization Code and shared classes of library sap.ui.vbm (1.28.0)",
+      "size" : 1741,
+      "compressedSize" : 1018,
+      "required" : ["sap/ui/core/Core.js", "sap/ui/core/library.js", "sap/ui/commons/library.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/library.properties",
+      "size" : 1417,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle.properties",
+      "size" : 553,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_ar.properties",
+      "size" : 740,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_bg.properties",
+      "size" : 969,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_ca.properties",
+      "size" : 466,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_cs.properties",
+      "size" : 518,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_da.properties",
+      "size" : 442,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_de.properties",
+      "size" : 471,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_el.properties",
+      "size" : 831,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_en.properties",
+      "size" : 434,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_es.properties",
+      "size" : 466,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_et.properties",
+      "size" : 447,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_fi.properties",
+      "size" : 463,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_fr.properties",
+      "size" : 491,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_hi.properties",
+      "size" : 873,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_hr.properties",
+      "size" : 469,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_hu.properties",
+      "size" : 537,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_it.properties",
+      "size" : 463,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_iw.properties",
+      "size" : 746,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_ja.properties",
+      "size" : 571,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_ko.properties",
+      "size" : 556,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_lt.properties",
+      "size" : 536,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_lv.properties",
+      "size" : 526,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_nl.properties",
+      "size" : 456,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_no.properties",
+      "size" : 457,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_pl.properties",
+      "size" : 511,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_pt.properties",
+      "size" : 467,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_ro.properties",
+      "size" : 476,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_ru.properties",
+      "size" : 958,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_sh.properties",
+      "size" : 470,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_sk.properties",
+      "size" : 549,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_sl.properties",
+      "size" : 476,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_sv.properties",
+      "size" : 473,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_th.properties",
+      "size" : 772,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_tr.properties",
+      "size" : 541,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_uk.properties",
+      "size" : 994,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_vi.properties",
+      "size" : 623,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_zh_CN.properties",
+      "size" : 493,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/ui/vbm/messagebundle_zh_TW.properties",
+      "size" : 499,
+      "required" : [],
+      "includes" : []
+    }
+  ]
+}

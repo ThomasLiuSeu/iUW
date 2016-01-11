@@ -1,0 +1,12 @@
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5) (c) Copyright 2009-2012 SAP AG. All rights reserved
+ */
+jQuery.sap.declare("sap.ui.vbm.Containers");jQuery.sap.require("sap.ui.vbm.library");jQuery.sap.require("sap.ui.vbm.VoAggregation");sap.ui.vbm.VoAggregation.extend("sap.ui.vbm.Containers",{metadata:{library:"sap.ui.vbm",defaultAggregation:"items",aggregations:{"items":{type:"sap.ui.vbm.Container",multiple:true,singularName:"item"}},events:{"click":{},"contextMenu":{}}}});sap.ui.vbm.Containers.M_EVENTS={'click':'click','contextMenu':'contextMenu'};
+sap.ui.vbm.Containers.prototype.getTemplateObject=function(){var i=this.getId();return{"type":"{00100000-2012-0004-B001-2297943F0CE6}","pos.bind":i+".P","key.bind":i+".IK","alignment.bind":i+".AL",};};
+sap.ui.vbm.Containers.prototype.getDataObject=function(){var v=this.getItems();var s=[];for(var n=0,l=v.length;n<l;++n){var i=v[n];var e={"P":i.getPosition(),"IK":i.getId(),"AL":i.getAlignment(),};s.push(e);}return{"name":this.getId(),"E":s};};
+sap.ui.vbm.Containers.prototype.getTypeObject=function(){return{"A":[{"changeable":"true","name":"P","alias":"P","type":"vector"},{"name":"IK","alias":"IK","type":"key"},{"name":"AL","alias":"AL","type":"string"}]};};
+sap.ui.vbm.Containers.prototype.HandleEvent=function(e){var s=e.Action.name;var f="fire"+s[0].toUpperCase()+s.slice(1);var C;if(C=this.FindInstance(e.Action.instance))if(C.mEventRegistry[s])C[f]({data:e});this[f]({data:e});};
+sap.ui.vbm.Containers.prototype.HandleOpenWindow=function(e){var c=this.FindInstance(e.mParameters.id);var i=c.getItem();if(i){var a=e.getParameter("contentarea").id;var C=sap.ui.getCore();var o=C.createUIArea(a);c.propagateModels(o);o.addContent(i);i.setBindingContext(c.getBindingContext());}};
+sap.ui.vbm.Containers.prototype.HandleCloseWindow=function(e){var i=this.FindInstance(e.mParameters.id);};
+sap.ui.vbm.Containers.prototype.FindInstance=function(k){var v=this.getItems();if(!v)return false;for(var n=0,l=v.length;n<l;++n){if(v[n].sId==k)return v[n];}return null;};
+sap.ui.vbm.Containers.prototype.getActionArray=function(a){var i=this.getId();if(this.mEventRegistry["click"]||this.IsEventRegistered("click"))a.push({"id":i+"1","name":"click","refScene":"MainScene","refVO":i,"refEvent":"Click","AddActionProperty":[{"name":"pos"}]});if(this.mEventRegistry["contextMenu"]||this.IsEventRegistered("contextMenu"))a.push({"id":i+"2","name":"contextMenu","refScene":"MainScene","refVO":i,"refEvent":"ContextMenu"});a=sap.ui.vbm.VoAggregation.prototype.getActionArray.apply(this,arguments);return a;};

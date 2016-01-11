@@ -1,0 +1,602 @@
+{
+  "modules" : [
+    {
+      "name" : "sap/collaboration/components/fiori/feed/Component.js",
+      "size" : 11625,
+      "compressedSize" : 4429,
+      "required" : ["sap/collaboration/library.js", "sap/collaboration/components/utils/CommonUtil.js", "sap/collaboration/components/utils/JamUtil.js", "sap/collaboration/components/utils/OdataUtil.js", "sap/ui/core/UIComponent.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/fiori/feed/app/App.controller.js",
+      "size" : 12697,
+      "compressedSize" : 5499,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/fiori/feed/app/App.view.js",
+      "size" : 1175,
+      "compressedSize" : 313,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/fiori/feed/commons/Detail.controller.js",
+      "size" : 4087,
+      "compressedSize" : 1861,
+      "required" : ["sap/collaboration/components/utils/JamUtil.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/fiori/feed/commons/Detail.view.js",
+      "size" : 1610,
+      "compressedSize" : 599,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/fiori/feed/dialog/Component.js",
+      "size" : 24274,
+      "compressedSize" : 8896,
+      "required" : ["sap/collaboration/library.js", "sap/collaboration/components/utils/CommonUtil.js", "sap/collaboration/components/utils/JamUtil.js", "sap/collaboration/components/utils/OdataUtil.js", "sap/ui/core/UIComponent.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/fiori/feed/splitApp/FeedTypeMaster.controller.js",
+      "size" : 4597,
+      "compressedSize" : 1782,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/fiori/feed/splitApp/FeedTypeMaster.view.js",
+      "size" : 2649,
+      "compressedSize" : 1208,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/fiori/feed/splitApp/GroupMaster.controller.js",
+      "size" : 4589,
+      "compressedSize" : 2439,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/fiori/feed/splitApp/GroupMaster.view.js",
+      "size" : 1478,
+      "compressedSize" : 534,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/fiori/feed/splitApp/SplitApp.controller.js",
+      "size" : 5521,
+      "compressedSize" : 2369,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/fiori/feed/splitApp/SplitApp.view.js",
+      "size" : 1298,
+      "compressedSize" : 353,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/fiori/notification/Component.js",
+      "size" : 6089,
+      "compressedSize" : 2724,
+      "required" : ["sap/collaboration/library.js", "sap/collaboration/components/utils/CommonUtil.js", "sap/ui/core/UIComponent.js", "sap/ui/commons/Button.js", "sap/m/MessageBox.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/fiori/notification/Notification.controller.js",
+      "size" : 19686,
+      "compressedSize" : 10656,
+      "required" : ["sap/collaboration/components/utils/NotificationTypeUtil.js", "sap/collaboration/components/utils/OdataUtil.js", "sap/collaboration/components/utils/CommonUtil.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/fiori/notification/Notification.view.js",
+      "size" : 5628,
+      "compressedSize" : 3833,
+      "required" : ["sap/collaboration/library.js", "sap/collaboration/components/fiori/notification/NotificationContainer.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/fiori/notification/NotificationContainer.js",
+      "description" : "! @copyright@",
+      "size" : 916,
+      "compressedSize" : 579,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/fiori/sharing/Component.js",
+      "size" : 11838,
+      "compressedSize" : 4981,
+      "required" : ["sap/collaboration/library.js", "sap/collaboration/components/utils/OdataUtil.js", "sap/collaboration/components/utils/CommonUtil.js", "sap/ui/core/UIComponent.js", "sap/m/MessageBox.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/fiori/sharing/FolderSelection.controller.js",
+      "size" : 9289,
+      "compressedSize" : 4489,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/fiori/sharing/FolderSelection.view.js",
+      "size" : 1248,
+      "compressedSize" : 550,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/fiori/sharing/NoGroups.controller.js",
+      "size" : 1139,
+      "compressedSize" : 300,
+      "required" : ["sap/collaboration/components/utils/CommonUtil.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/fiori/sharing/NoGroups.view.js",
+      "size" : 2023,
+      "compressedSize" : 920,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/fiori/sharing/Sharing.controller.js",
+      "size" : 24570,
+      "compressedSize" : 13549,
+      "required" : ["sap/collaboration/components/utils/CommonUtil.js", "sap/collaboration/components/utils/OdataUtil.js", "sap/collaboration/components/fiori/sharing/helper/ShareUtil.js", "sap/collaboration/components/fiori/sharing/helper/AttachmentsUtil.js", "sap/m/MessageToast.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/fiori/sharing/Sharing.view.js",
+      "size" : 5415,
+      "compressedSize" : 3296,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/fiori/sharing/attachment/Attachment.js",
+      "description" : "This module is a class whose objects are meant to hold information about a single file.",
+      "size" : 2725,
+      "compressedSize" : 1637,
+      "required" : ["sap/collaboration/components/fiori/sharing/attachment/InvalidAttachmentConstructorArgumentsException.js", "sap/collaboration/components/fiori/sharing/attachment/InvalidAttachmentParameterException.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/fiori/sharing/attachment/InvalidAttachmentConstructorArgumentsException.js",
+      "description" : "This module is an exception class whose objects are thrown during File class object construction. An exception of this kind is thrown when the File constructor isn't provided the arguments it need to build an instance of the File class.",
+      "size" : 659,
+      "compressedSize" : 372,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/fiori/sharing/attachment/InvalidAttachmentParameterException.js",
+      "description" : "! @copyright@",
+      "size" : 394,
+      "compressedSize" : 344,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/fiori/sharing/dialog/Component.js",
+      "size" : 13596,
+      "compressedSize" : 6627,
+      "required" : ["sap/collaboration/components/utils/OdataUtil.js", "sap/collaboration/components/utils/CommonUtil.js", "sap/ui/core/UIComponent.js", "sap/m/MessageToast.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/fiori/sharing/helper/AttachmentsUtil.js",
+      "description" : "AttachmentsUtil helper class",
+      "size" : 6353,
+      "compressedSize" : 3988,
+      "required" : ["sap/collaboration/components/utils/CommonUtil.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/fiori/sharing/helper/ShareUtil.js",
+      "description" : "JamUtil helper class  Is responsible for the integration and communication with the JAM APIs",
+      "size" : 17329,
+      "compressedSize" : 8673,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle.properties",
+      "size" : 19841,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_ar.properties",
+      "size" : 37777,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_bg.properties",
+      "size" : 44665,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_ca.properties",
+      "size" : 20463,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_cs.properties",
+      "size" : 22546,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_da.properties",
+      "size" : 19881,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_de.properties",
+      "size" : 21140,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_el.properties",
+      "size" : 44625,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_en.properties",
+      "size" : 19603,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_en_US_sappsd.properties",
+      "size" : 49569,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_en_US_saptrc.properties",
+      "size" : 24534,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_es.properties",
+      "size" : 20607,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_et.properties",
+      "size" : 20609,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_fi.properties",
+      "size" : 21091,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_fr.properties",
+      "size" : 21327,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_hi.properties",
+      "size" : 41725,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_hr.properties",
+      "size" : 20140,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_hu.properties",
+      "size" : 23265,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_it.properties",
+      "size" : 20225,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_iw.properties",
+      "size" : 34860,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_ja.properties",
+      "size" : 30388,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_ko.properties",
+      "size" : 27269,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_lt.properties",
+      "size" : 21723,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_lv.properties",
+      "size" : 22124,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_nl.properties",
+      "size" : 20513,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_no.properties",
+      "size" : 19869,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_pl.properties",
+      "size" : 21951,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_pt.properties",
+      "size" : 20592,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_ro.properties",
+      "size" : 21001,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_ru.properties",
+      "size" : 46045,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_sh.properties",
+      "size" : 20446,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_sk.properties",
+      "size" : 21945,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_sl.properties",
+      "size" : 19951,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_sv.properties",
+      "size" : 20195,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_th.properties",
+      "size" : 41708,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_tr.properties",
+      "size" : 22162,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_uk.properties",
+      "size" : 43779,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_vi.properties",
+      "size" : 28686,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_zh_CN.properties",
+      "size" : 22838,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/resources/i18n/messagebundle_zh_TW.properties",
+      "size" : 23121,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/socialprofile/Component.js",
+      "size" : 12123,
+      "compressedSize" : 3901,
+      "required" : ["sap/ui/core/UIComponent.js", "sap/collaboration/components/utils/CommonUtil.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/socialprofile/SocialProfile.controller.js",
+      "size" : 9306,
+      "compressedSize" : 4874,
+      "required" : ["sap/collaboration/components/utils/CommonUtil.js", "sap/collaboration/components/utils/OdataUtil.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/socialprofile/SocialProfile.view.js",
+      "size" : 5207,
+      "compressedSize" : 3170,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/socialtimeline/Component.js",
+      "size" : 46388,
+      "compressedSize" : 17867,
+      "required" : ["sap/ui/core/UIComponent.js", "sap/suite/ui/commons/Timeline.js", "sap/suite/ui/commons/TimelineItem.js", "sap/collaboration/components/socialtimeline/controls/TimelineEntryControl.js", "sap/collaboration/components/socialtimeline/datahandlers/TimelineDataHandler.js", "sap/collaboration/components/socialtimeline/datahandlers/SMIntegrationDataHandler.js", "sap/collaboration/components/socialtimeline/datahandlers/JamDataHandler.js", "sap/collaboration/components/utils/CommonUtil.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/socialtimeline/annotations/Metadata.js",
+      "size" : 3534,
+      "compressedSize" : 1627,
+      "required" : ["sap/ui/base/Object.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/socialtimeline/annotations/MetadataException.js",
+      "size" : 464,
+      "compressedSize" : 411,
+      "required" : ["sap/ui/base/Object.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/socialtimeline/annotations/TimelineTermsUtility.js",
+      "size" : 14246,
+      "compressedSize" : 6779,
+      "required" : ["sap/collaboration/components/socialtimeline/annotations/MetadataException.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/socialtimeline/controls/TimelineEntryControl.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5) (c) Copyright 2009-2014 SAP AG. All rights reserved",
+      "size" : 5907,
+      "compressedSize" : 3033,
+      "required" : ["sap/collaboration/components/utils/CommonUtil.js", "sap/ui/core/Control.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/socialtimeline/controls/TimelineEntryControlRenderer.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5) (c) Copyright 2009-2014 SAP AG. All rights reserved",
+      "size" : 460,
+      "compressedSize" : 434,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/socialtimeline/datahandlers/JamDataHandler.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5) (c) Copyright 2009-2014 SAP AG. All rights reserved",
+      "size" : 17476,
+      "compressedSize" : 6548,
+      "required" : ["sap/collaboration/components/utils/OdataUtil.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/socialtimeline/datahandlers/SMIntegrationDataHandler.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5) (c) Copyright 2009-2014 SAP AG. All rights reserved",
+      "size" : 4912,
+      "compressedSize" : 2155,
+      "required" : ["sap/collaboration/components/utils/OdataUtil.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/socialtimeline/datahandlers/ServiceDataHandler.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5) (c) Copyright 2009-2014 SAP AG. All rights reserved",
+      "size" : 4416,
+      "compressedSize" : 1797,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/socialtimeline/datahandlers/TimelineDataHandler.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5) (c) Copyright 2009-2014 SAP AG. All rights reserved",
+      "size" : 20400,
+      "compressedSize" : 8351,
+      "required" : ["sap/collaboration/components/socialtimeline/datahandlers/ServiceDataHandler.js", "sap/collaboration/components/socialtimeline/datahandlers/SMIntegrationDataHandler.js", "sap/collaboration/components/socialtimeline/annotations/TimelineTermsUtility.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/utils/CommonUtil.js",
+      "size" : 6971,
+      "compressedSize" : 3599,
+      "required" : ["sap/m/MessageBox.js", "sap/collaboration/components/utils/MessageQueueUtil.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/utils/JamUtil.js",
+      "description" : "JamUtil helper class  Is responsible for the integration and communication with the JAM APIs",
+      "size" : 7804,
+      "compressedSize" : 3960,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/utils/MessageQueueUtil.js",
+      "size" : 2660,
+      "compressedSize" : 1254,
+      "required" : ["sap/m/MessageBox.js", "sap/m/MessageToast.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/utils/NotificationTypeUtil.js",
+      "description" : "OdataUtil helper class  Is responsible for the integration and communication with the Backend OData Server",
+      "size" : 2597,
+      "compressedSize" : 1718,
+      "required" : ["jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/components/utils/OdataUtil.js",
+      "description" : "OdataUtil helper class  Is responsible for the integration and communication with the Backend OData Server",
+      "size" : 26052,
+      "compressedSize" : 11082,
+      "required" : ["sap/collaboration/components/utils/CommonUtil.js", "jquery.sap.global.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/collaboration/library.js",
+      "description" : "Initialization Code and shared classes of library sap.collaboration (1.28.1)",
+      "size" : 2897,
+      "compressedSize" : 686,
+      "required" : ["sap/ui/core/Core.js", "sap/ui/core/library.js", "sap/suite/ui/commons/library.js", "jquery.sap.global.js"],
+      "includes" : ["sap/collaboration/AppType.js", "sap/collaboration/FeedType.js"]
+    },
+    {
+      "name" : "sap/collaboration/library.properties",
+      "size" : 223,
+      "required" : [],
+      "includes" : []
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5) (c) Copyright 2009-2012 SAP AG. All rights reserved
+ */
+jQuery.sap.declare("sap.ui.vbm.VoAggregation");jQuery.sap.require("sap.ui.vbm.library");jQuery.sap.require("sap.ui.core.Element");sap.ui.core.Element.extend("sap.ui.vbm.VoAggregation",{metadata:{library:"sap.ui.vbm",events:{"handleMoved":{},"handleContextMenu":{},"handleClick":{}}}});sap.ui.vbm.VoAggregation.M_EVENTS={'handleMoved':'handleMoved','handleContextMenu':'handleContextMenu','handleClick':'handleClick'};
+sap.ui.vbm.VoAggregation.prototype.IsEventRegistered=function(n){var v=this.getItems();if(!v)return false;for(var a=0,l=v.length;a<l;++a){var i=v[a];if(i.mEventRegistry[n])return true;}return false;};
+sap.ui.vbm.VoAggregation.prototype.FindInstance=function(n){var v=this.getItems();if(!v)return false;var k=n.split(".")[1];for(var a=0,l=v.length;a<l;++a){if(v[a].sId==k)return v[a];}return null;};
+sap.ui.vbm.VoAggregation.prototype.getActionArray=function(a){var i=this.getId();if(this.mEventRegistry["handleMoved"]||this.IsEventRegistered("handleMoved"))a.push({"id":i+"4","name":"handleMoved","refScene":"MainScene","refVO":i,"refEvent":"HandleMoved"});if(this.mEventRegistry["handleContextMenu"]||this.IsEventRegistered("handleContextMenu"))a.push({"id":i+"5","name":"handleContextMenu","refScene":"MainScene","refVO":i,"refEvent":"HandleContextMenu"});if(this.mEventRegistry["handleClick"]||this.IsEventRegistered("handleClick"))a.push({"id":i+"6","name":"handleClick","refScene":"MainScene","refVO":i,"refEvent":"HandleClick"});return a;};

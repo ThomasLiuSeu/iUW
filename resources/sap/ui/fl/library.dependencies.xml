@@ -1,0 +1,309 @@
+<?xml version="1.0" ?>
+<library  version="2.0" name="sap.ui.fl">
+  <module name="sap/ui/fl/Cache.js" size="4431" compressedSize="1183">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2014-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/fl/Utils.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/fl/Change.js" size="12582" compressedSize="4533">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2014-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/base/EventProvider.js"/>
+      <module name="sap/ui/fl/Utils.js"/>
+      <module name="sap/ui/fl/registry/Settings.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/fl/ChangePersistence.js" size="7081" compressedSize="2549">
+    <description>global Promise</description>
+    <requires>
+      <module name="sap/ui/fl/Change.js"/>
+      <module name="sap/ui/fl/Utils.js"/>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/LrepConnector.js"/>
+      <module name="sap/ui/fl/Cache.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/fl/ChangePersistenceFactory.js" size="2151" compressedSize="635">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2014-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/ChangePersistence.js"/>
+      <module name="sap/ui/fl/Utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/fl/DefaultVariant.js" size="5058" compressedSize="1466">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2014-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/Change.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/fl/FakeLrepConnector.js" size="2896" compressedSize="1157">
+    <description>global Promise</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/thirdparty/URI.js"/>
+      <module name="sap/ui/fl/Utils.js"/>
+      <module name="sap/ui/fl/LrepConnector.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/fl/FlexController.js" size="13437" compressedSize="4327">
+    <description>global Promise</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/Persistence.js"/>
+      <module name="sap/ui/fl/registry/ChangeRegistry.js"/>
+      <module name="sap/ui/fl/Utils.js"/>
+      <module name="sap/ui/fl/Change.js"/>
+      <module name="sap/ui/fl/registry/Settings.js"/>
+      <module name="sap/ui/fl/ChangePersistenceFactory.js"/>
+      <module name="sap/ui/core/mvc/View.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/fl/FlexControllerFactory.js" size="1708" compressedSize="451">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2014-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/FlexController.js"/>
+      <module name="sap/ui/fl/Utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/fl/LrepConnector.js" size="20925" compressedSize="6545">
+    <description>global Promise</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/thirdparty/URI.js"/>
+      <module name="sap/ui/fl/Utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/fl/Persistence.js" size="16790" compressedSize="6434">
+    <description>global Promise</description>
+    <requires>
+      <module name="sap/ui/fl/Change.js"/>
+      <module name="sap/ui/fl/DefaultVariant.js"/>
+      <module name="sap/ui/fl/Utils.js"/>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/LrepConnector.js"/>
+      <module name="sap/ui/fl/Cache.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/fl/Preprocessor.js" size="1069" compressedSize="342">
+    <description>Provides object sap.ui.fl.Processor</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/mvc/Preprocessor.js"/>
+      <module name="sap/ui/fl/PreprocessorImpl.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/fl/PreprocessorImpl.js" size="2443" compressedSize="940">
+    <description>Provides object sap.ui.fl.ProcessorImpl</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Component.js"/>
+      <module name="sap/ui/fl/FlexControllerFactory.js"/>
+      <module name="sap/ui/fl/Utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/fl/Transports.js" size="3824" compressedSize="1229">
+    <description>global Promise</description>
+    <requires>
+      <module name="sap/ui/fl/LrepConnector.js"/>
+      <module name="sap/ui/fl/Utils.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/fl/Utils.js" size="10194" compressedSize="3164">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2014-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Component.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/fl/changeHandler/AddField.js" size="5398" compressedSize="2396">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2014-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/Utils.js"/>
+      <module name="sap/ui/fl/changeHandler/Base.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/fl/changeHandler/AddGroup.js" size="3170" compressedSize="1427">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2014-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/fl/Utils.js"/>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/changeHandler/Base.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/fl/changeHandler/Base.js" size="3556" compressedSize="963">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2014-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/fl/Utils.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/fl/changeHandler/HideControl.js" size="1501" compressedSize="517">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2014-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/changeHandler/Base.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/fl/changeHandler/MoveFields.js" size="5508" compressedSize="2145">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2014-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/changeHandler/Base.js"/>
+      <module name="sap/ui/fl/Utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/fl/changeHandler/MoveGroups.js" size="4206" compressedSize="1788">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2014-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/changeHandler/Base.js"/>
+      <module name="sap/ui/fl/Utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/fl/changeHandler/OrderFields.js" size="3536" compressedSize="1298">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2014-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/changeHandler/Base.js"/>
+      <module name="sap/ui/fl/Utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/fl/changeHandler/OrderGroups.js" size="3308" compressedSize="1272">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2014-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/changeHandler/Base.js"/>
+      <module name="sap/ui/fl/Utils.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/fl/changeHandler/RemoveField.js" size="1682" compressedSize="571">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2014-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/changeHandler/Base.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/fl/changeHandler/RemoveGroup.js" size="1628" compressedSize="550">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2014-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/changeHandler/Base.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/fl/changeHandler/RenameField.js" size="2367" compressedSize="1048">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2014-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/fl/Utils.js"/>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/changeHandler/Base.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/fl/changeHandler/RenameGroup.js" size="2128" compressedSize="878">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2014-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/fl/Utils.js"/>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/changeHandler/Base.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/fl/changeHandler/UnhideControl.js" size="1516" compressedSize="516">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2014-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/changeHandler/Base.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/fl/core/EventDelegate.js" size="4041" compressedSize="1441">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2014-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/Utils.js"/>
+      <module name="sap/ui/base/EventProvider.js"/>
+      <module name="sap/ui/fl/registry/ChangeRegistry.js"/>
+      <module name="sap/ui/fl/core/FlexVisualizer.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/fl/core/FlexVisualizer.js" size="887" compressedSize="264">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2014-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/fl/fieldExt/Access.js" size="7290" compressedSize="2340">
+    <description>global Promise</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/fl/library.js" size="887" compressedSize="538">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="sap/ui/core/mvc/XMLView.js"/>
+      <module name="sap/ui/core/mvc/View.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/fl/registry/ChangeRegistry.js" size="9361" compressedSize="3058">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2014-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/fl/Utils.js"/>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/registry/ChangeRegistryItem.js"/>
+      <module name="sap/ui/fl/registry/SimpleChanges.js"/>
+      <module name="sap/ui/fl/registry/ChangeTypeMetadata.js"/>
+      <module name="sap/ui/fl/registry/Settings.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/fl/registry/ChangeRegistryItem.js" size="2913" compressedSize="1123">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2014-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/fl/Utils.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/fl/registry/ChangeTypeMetadata.js" size="3588" compressedSize="1124">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2014-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/fl/Utils.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/fl/registry/Settings.js" size="7480" compressedSize="2753">
+    <description>global Error</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/LrepConnector.js"/>
+      <module name="sap/ui/fl/Cache.js"/>
+      <module name="sap/ui/fl/Utils.js"/>
+      <module name="sap/ui/base/EventProvider.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/fl/registry/SimpleChanges.js" size="2177" compressedSize="1319">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;(c) Copyright 2014-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/fl/changeHandler/RemoveField.js"/>
+      <module name="sap/ui/fl/changeHandler/RemoveGroup.js"/>
+      <module name="sap/ui/fl/changeHandler/RenameField.js"/>
+      <module name="sap/ui/fl/changeHandler/RenameGroup.js"/>
+      <module name="sap/ui/fl/changeHandler/AddField.js"/>
+      <module name="sap/ui/fl/changeHandler/AddGroup.js"/>
+      <module name="sap/ui/fl/changeHandler/OrderFields.js"/>
+      <module name="sap/ui/fl/changeHandler/OrderGroups.js"/>
+      <module name="sap/ui/fl/changeHandler/HideControl.js"/>
+      <module name="sap/ui/fl/changeHandler/UnhideControl.js"/>
+      <module name="sap/ui/fl/changeHandler/MoveFields.js"/>
+      <module name="sap/ui/fl/changeHandler/MoveGroups.js"/>
+    </requires>
+  </module>
+</library>

@@ -1,0 +1,30 @@
+<core:View
+    height="100%"
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    controllerName="view.bodyPage"
+    xmlns:html="http://www.w3.org/1999/xhtml">
+    <Page id="container" title="Standard Premium" showNavButton="true">
+        <headerContent>
+        </headerContent>
+        <content>
+            <ObjectHeader
+                id="objectHeader"
+                title="">
+               <attributes>
+
+                </attributes>
+            </ObjectHeader>
+
+
+        </content>
+        <footer>
+            <Toolbar id="planMemberFooterBar">
+                <ToolbarSpacer/>
+                <Button  type="Accept" text="Premium Recalculation"  press="onClickBackBtn" />
+                <Button id="actionButton" icon="sap-icon://action"  press="pressActionSheet" />
+            </Toolbar>
+        </footer>
+    </Page>
+</core:View>

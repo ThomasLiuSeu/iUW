@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>variants/VariantManagement</name>
+    <derived/>
+    <documentation>The variant management control can be used to manage variants, such as filter bar variants or table variants.</documentation>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property since="1.22.0" group="Misc" type="sap.ui.core/string" name="initialSelectionKey">
+            <documentation>Provides a string value to set the initially selected variant.</documentation>
+        </property>
+        <property since="1.22.0" group="Misc" defaultValue="true" type="sap.ui.core/boolean" name="enabled">
+            <documentation>Enables or disables the control.</documentation>
+        </property>
+        <property since="1.22.0" group="Misc" type="sap.ui.core/string" name="defaultVariantKey">
+            <documentation>Provides a string value to set the default variant. Used for the save dialog. Has no effect on the selected variant.</documentation>
+        </property>
+        <property since="1.24.0" group="Misc" type="sap.ui.core/string" name="selectionKey">
+            <documentation>The key of the currently selected item. Returns null if the default item ist selected.</documentation>
+        </property>
+        <property since="1.26.0" group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="showCreateTile">
+            <documentation>Indicates that a Create Tile is visible in the Create dialog.</documentation>
+        </property>
+        <property since="1.26.0" group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="showExecuteOnSelection">
+            <documentation>Indicates that Execute on Selection is visible in the Create and in the Management Dialog</documentation>
+        </property>
+        <property since="1.26.0" group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="showShare">
+            <documentation>Indicates that a share function is available in Variant Management</documentation>
+        </property>
+        <property since="1.26.0" group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="lifecycleSupport">
+            <documentation>Enables the lifecycle support for VariantItems.</documentation>
+        </property>
+        <property since="1.28.0" group="Misc" type="sap.ui.core/string" name="standardItemText">
+            <documentation>Alternative text for the &quot;Standard&quot; item.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event allowPreventDefault="false" since="1.22.0" name="save">
+            <documentation>Event fired if the save variant dialog is closed with ok for a variant.</documentation>
+        </event>
+        <event allowPreventDefault="false" since="1.22.0" name="manage">
+            <documentation>Event fired if users apply changes to variants in the manage variants dialog.</documentation>
+        </event>
+        <event allowPreventDefault="false" since="1.22.0" name="select">
+            <documentation>Event fired if a new variant is selected.</documentation>
+        </event>
+    </events>
+    <aggregations default="items">
+        <aggregation cardinality="0..n" since="1.22.0" type="sap.ui.core/Item" name="items">
+            <documentation>Aggregation for items displayed by the variant management control.</documentation>
+            <deprecation since="1.26.0">Additional information needed for each item. New Collection variantItems introduced.</deprecation>
+        </aggregation>
+        <aggregation cardinality="0..n" since="1.26.0" type="sap.ui.comp/variants/VariantItem" name="variantItems">
+            <documentation>Main aggregation for variant items displayed by the Variant Management control</documentation>
+        </aggregation>
+    </aggregations>
+    <methods>
+        <method since="1.22.0" name="clearVariantSelection">
+            <documentation>Removes the current variant selection and resets to default value.</documentation>
+        </method>
+    </methods>
+</control>

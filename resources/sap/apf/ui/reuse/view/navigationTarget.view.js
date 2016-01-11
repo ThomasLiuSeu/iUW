@@ -1,0 +1,6 @@
+/*!
+ * SAP APF Analysis Path Framework
+ * 
+ * (c) Copyright 2012-2014 SAP SE. All rights reserved
+ */
+sap.ui.jsview("sap.apf.ui.reuse.view.navigationTarget",{getControllerName:function(){return"sap.apf.ui.reuse.controller.navigationTarget";},createContent:function(c){var v=this.getViewData();this.oNavListPopover=v.oNavListPopover;this.oOpenInButtonEventSource=v.oOpenInButtonEventSource;this.oNavigationHandler=v.oNavigationHandler;this.oUiApi=v.oUiApi;this.oController=c;this.oUiApi.getLayoutView().byId("applicationPage").setBusy(true);var n=this.oNavigationHandler.getNavigationTargetsWithText();n.then(this._prepareActionListModel.bind(this),function(){this.oUiApi.getLayoutView().byId("applicationPage").setBusy(false);});},_prepareActionListModel:function(n){var a,n;var s=this;var m=new sap.ui.model.json.JSONModel();var d={navTargets:n};a=new sap.m.List({items:{path:"/navTargets",template:new sap.m.StandardListItem({title:"{text}",type:sap.m.ListType.Navigation,press:function(e){var b=e.getSource().getBindingContext().getObject().id;s.oController.handleNavigation(b);},})}});m.setData(d);a.setModel(m);this.oNavListPopover.removeAllContent();this.oNavListPopover.addContent(a);this.oUiApi.getLayoutView().byId("applicationPage").setBusy(false);this.oNavListPopover.openBy(this.oOpenInButtonEventSource);}});

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>smartform/Layout</name>
+    <derived/>
+    <documentation>Layout settings to adjust ResponsiveGridLayout.</documentation>
+    <baseType>sap.ui.core/Element</baseType>
+    <properties>
+        <property group="Misc" type="sap.ui.core/int" name="labelSpanL">
+            <documentation>Default span for labels in large size. This span is only used if more than 1 container is in one line, if only 1 container is in the line the labelSpanM value is used.
+Default value is</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/int" name="labelSpanM">
+            <documentation>Default span for labels in medium size. This property is used for full size containers. if more than one Container is in one line, labelSpanL is used.
+Default value is</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/int" name="labelSpanS">
+            <documentation>Default span for labels in small size.
+Default value is</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/int" name="emptySpanL">
+            <documentation>test</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/int" name="emptySpanM">
+            <documentation>test</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/int" name="emptySpanS">
+            <documentation>test</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/int" name="columnsL">
+            <documentation>test</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/int" name="columnsM">
+            <documentation>test</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/int" name="breakpointL">
+            <documentation>test</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/int" name="breakpointM">
+            <documentation>test</documentation>
+        </property>
+    </properties>
+</control>

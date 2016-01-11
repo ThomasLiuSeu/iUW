@@ -1,0 +1,266 @@
+<mvc:View controllerName="sap.apf.modeler.ui.controller.facetFilter"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core">
+	<VBox xmlns="sap.m" id="idform" visible="true" width="100%"
+		displayInline="false" direction="Column" fitContainer="false"
+		renderType="Div" justifyContent="Start" alignItems="Stretch">
+		<items>
+			<ScrollContainer vertical="true">
+				<VBox xmlns="sap.m" id="idScrollContent">
+					<VBox xmlns="sap.m" id="idFacetFiletrTitleLayout" visible="true"
+						displayInline="false" direction="Column" fitContainer="false"
+						renderType="Div" justifyContent="Start" alignItems="Stretch">
+						<items>
+
+							<l:Grid id="idFfPropertyLabeLayout" hSpacing="1" vSpacing="1">
+								<Label xmlns="sap.m" id="idFfPropertyLabel" width="100%"
+									textAlign="Right">
+									<layoutData>
+										<GridData xmlns="sap.ui.layout" span="L2 M4 S4" />
+									</layoutData>
+								</Label>
+								<ComboBox xmlns="sap.m" id="idffProperty" visible="true"
+									width="100%" change="handleChangeForProperty" items="{/Properties}">
+									<core:Item key="{propertyKey}" text="{propertyName}" />
+									<layoutData>
+										<GridData xmlns="sap.ui.layout" span="L7 M7 S7" />
+									</layoutData>
+								</ComboBox>
+							</l:Grid>
+
+							<l:Grid id="idFfLabelLayout" hSpacing="1" vSpacing="1">
+								<Label xmlns="sap.m" id="idFfLabel" width="100%"
+									textAlign="Right">
+									<layoutData>
+										<GridData xmlns="sap.ui.layout" span="L2 M4 S4" />
+									</layoutData>
+								</Label>
+								<Input xmlns="sap.m" id="idLabel" editable="true"
+									change="handleChangeForLabel">
+									<layoutData>
+										<GridData xmlns="sap.ui.layout" span="L7 M7 S7" />
+									</layoutData>
+								</Input>
+							</l:Grid>
+
+							<l:Grid id="idFfAliasLabelLayout" hSpacing="1" vSpacing="1">
+								<Label xmlns="sap.m" id="idFfAliasLabel" width="100%"
+									textAlign="Right">
+									<layoutData>
+										<GridData xmlns="sap.ui.layout" span="L2 M4 S4" />
+									</layoutData>
+								</Label>
+								<ComboBox xmlns="sap.m" id="idAlias" visible="true"
+									width="100%" change="handleChangeForAlias" items="{/Properties}">
+									<core:Item key="{propertyKey}" text="{propertyName}" />
+									<layoutData>
+										<GridData xmlns="sap.ui.layout" span="L7 M7 S7" />
+									</layoutData>
+								</ComboBox>
+							</l:Grid>
+
+							<l:Grid id="idSelectionModeLabel1Layout" hSpacing="1"
+								vSpacing="1">
+								<Label xmlns="sap.m" id="idSelectionModeLabel" width="100%"
+									textAlign="Right">
+									<layoutData>
+										<GridData xmlns="sap.ui.layout" span="L2 M4 S4" />
+									</layoutData>
+								</Label>
+								<VBox xmlns="sap.m" id="idSelectionMode" visible="true"
+									displayInline="false" direction="Column" fitContainer="true"
+									renderType="Div" justifyContent="Start">
+									<items>
+										<RadioButton groupName="GroupA" id="single" text=""
+											select="handleChangeForSelectionModeSingle" />
+										<RadioButton groupName="GroupA" id="multi" text=""
+											select="handleChangeForSelectionModeMulti" />
+									</items>
+									<layoutData>
+										<GridData xmlns="sap.ui.layout" span="L7 M7 S7" />
+									</layoutData>
+								</VBox>
+							</l:Grid>
+						</items>
+					</VBox>
+
+					<Label xmlns="sap.m" id="idValueHelpTitle"></Label>
+
+					<VBox xmlns="sap.m" id="idFacetFiletrSourceLayout" visible="true"
+						displayInline="false" direction="Column" fitContainer="false"
+						renderType="Div" justifyContent="Start" alignItems="Stretch">
+						<items>
+
+							<l:Grid id="idVhSourceLabelLayout" hSpacing="1" vSpacing="1">
+								<Label xmlns="sap.m" id="idVhSourceLabel" width="100%"
+									textAlign="Right">
+									<layoutData>
+										<GridData xmlns="sap.ui.layout" span="L2 M4 S4" />
+									</layoutData>
+								</Label>
+								<Input xmlns="sap.m" id="idVHSource" editable="true"
+									change="handleChangeForVHSource">
+									<layoutData>
+										<GridData xmlns="sap.ui.layout" span="L7 M7 S7" />
+									</layoutData>
+								</Input>
+							</l:Grid>
+
+							<l:Grid id="idVhEntityLabelLayout" hSpacing="1" vSpacing="1">
+								<Label xmlns="sap.m" id="idVhEntityLabel" width="100%"
+									textAlign="Right">
+									<layoutData>
+										<GridData xmlns="sap.ui.layout" span="L2 M4 S4" />
+									</layoutData>
+								</Label>
+								<Select xmlns="sap.m" id="idVHEntity" visible="true"
+									enabled="true" width="100%" maxWidth="" type="Default"
+									autoAdjustWidth="false" change="handleChangeForVHEntity" items="{/Entities}">
+									<core:Item key="{entityKey}" text="{entityName}" />
+									<layoutData>
+										<GridData xmlns="sap.ui.layout" span="L7 M7 S7" />
+									</layoutData>
+								</Select>
+							</l:Grid>
+
+							<l:Grid id="idVhSelectPropertiesLabelLayout" hSpacing="1"
+								vSpacing="1">
+								<Label xmlns="sap.m" id="idVhSelectPropertiesLabel" width="100%"
+									textAlign="Right">
+									<layoutData>
+										<GridData xmlns="sap.ui.layout" span="L2 M4 S4" />
+									</layoutData>
+								</Label>
+								<MultiComboBox xmlns="sap.m" id="idVHSelectProperties"
+									value="" width="" enabled="true" visible="true" valueState="None"
+									name="" placeholder="" editable="true" maxWidth=""
+									selectedItems="" change="" selectionChange=""
+									selectionFinish="handleChangeForVHSelectProperties" items="{/Properties}">
+									<core:Item key="{propertyKey}" text="{propertyName}" />
+									<layoutData>
+										<GridData xmlns="sap.ui.layout" span="L7 M7 S7" />
+									</layoutData>
+								</MultiComboBox>
+							</l:Grid>
+
+							<l:Grid id="idVhDefaultValueModeLabelLayout" hSpacing="1"
+								vSpacing="1">
+								<Label xmlns="sap.m" id="idVhDefaultValueModeLabel" width="100%"
+									textAlign="Right">
+									<layoutData>
+										<GridData xmlns="sap.ui.layout" span="L2 M4 S4" />
+									</layoutData>
+								</Label>
+								<Select xmlns="sap.m" id="idVHDefaultValueMode" visible="true"
+									enabled="true" width="100%" type="Default" autoAdjustWidth="false"
+									selectedItem="" change="handleChangeForDVMode" items="{/DVModes}">
+									<core:Item key="{dvKey}" text="{dvName}" />
+									<layoutData>
+										<GridData xmlns="sap.ui.layout" span="L7 M7 S7" />
+									</layoutData>
+								</Select>
+							</l:Grid>
+
+							<l:Grid id="idVhDefaultValuesLabelLayout" hSpacing="1"
+								vSpacing="1">
+								<Label xmlns="sap.m" id="idVhDefaultValuesLabel" width="100%"
+									textAlign="Right">
+									<layoutData>
+										<GridData xmlns="sap.ui.layout" span="L2 M4 S4" />
+									</layoutData>
+								</Label>
+								<Input xmlns="sap.m" id="idVHDefaultValues" editable="true"
+									change="handleChangeForVHdefaultValues">
+									<layoutData>
+										<GridData xmlns="sap.ui.layout" span="L7 M7 S7" />
+									</layoutData>
+								</Input>
+							</l:Grid>
+
+							<l:Grid id="idVhFunctionLabelLayout" hSpacing="1"
+								vSpacing="1">
+								<Label xmlns="sap.m" id="idVhFunctionLabel" width="100%"
+									textAlign="Right">
+									<layoutData>
+										<GridData xmlns="sap.ui.layout" span="L2 M4 S4" />
+									</layoutData>
+								</Label>
+								<Input xmlns="sap.m" id="idVHfunction" editable="true"
+									change="handleChangeForPreselectionFunction">
+									<layoutData>
+										<GridData xmlns="sap.ui.layout" span="L7 M7 S7" />
+									</layoutData>
+								</Input>
+							</l:Grid>
+
+						</items>
+					</VBox>
+
+					<Label xmlns="sap.m" id="idFilterResolutionTitle"></Label>
+
+					<VBox xmlns="sap.m" id="idFacetFiletrResolutionLayout"
+						visible="true" displayInline="false" direction="Column"
+						fitContainer="false" renderType="Div" justifyContent="Start"
+						alignItems="Stretch">
+						<items>
+
+							<l:Grid id="idVhSourceLabel1Layout" hSpacing="1" vSpacing="1">
+								<Label xmlns="sap.m" id="idVhSourceLabel1" width="100%"
+									textAlign="Right">
+									<layoutData>
+										<GridData xmlns="sap.ui.layout" span="L2 M4 S4" />
+									</layoutData>
+								</Label>
+								<Input xmlns="sap.m" id="idFRSource" editable="true"
+									change="handleChangeForFRSource">
+									<layoutData>
+										<GridData xmlns="sap.ui.layout" span="L7 M7 S7" />
+									</layoutData>
+								</Input>
+							</l:Grid>
+
+							<l:Grid id="idVhEntityLabel1Layout" hSpacing="1" vSpacing="1">
+								<Label xmlns="sap.m" id="idVhEntityLabel1" width="100%"
+									textAlign="Right">
+									<layoutData>
+										<GridData xmlns="sap.ui.layout" span="L2 M4 S4" />
+									</layoutData>
+								</Label>
+								<Select xmlns="sap.m" id="idFREntity" visible="true"
+									enabled="true" width="100%" maxWidth="100%" type="Default"
+									autoAdjustWidth="false" selectedItem="" change="handleChangeForFREntity"
+									items="{/Entities}">
+									<core:Item key="{entityKey}" text="{entityName}" />
+									<layoutData>
+										<GridData xmlns="sap.ui.layout" span="L7 M7 S7" />
+									</layoutData>
+								</Select>
+							</l:Grid>
+
+							<l:Grid id="idVhSelectPropertiesLabel1Layout" hSpacing="1"
+								vSpacing="1">
+								<Label xmlns="sap.m" id="idVhSelectPropertiesLabel1"
+									width="100%" textAlign="Right">
+									<layoutData>
+										<GridData xmlns="sap.ui.layout" span="L2 M4 S4" />
+									</layoutData>
+								</Label>
+								<MultiComboBox xmlns="sap.m" id="idFRSelectProperties"
+									value="" width="" enabled="true" visible="true" valueState="None"
+									name="" placeholder="" editable="true" maxWidth=""
+									selectedItems="" change="" selectionChange=""
+									selectionFinish="handleChangeForFRSelectProperties" items="{/Properties}">
+									<core:Item key="{propertyKey}" text="{propertyName}" />
+									<layoutData>
+										<GridData xmlns="sap.ui.layout" span="L7 M7 S7" />
+									</layoutData>
+								</MultiComboBox>
+							</l:Grid>
+
+						</items>
+					</VBox>
+				</VBox>
+			</ScrollContainer>
+		</items>
+	</VBox>
+</mvc:View>

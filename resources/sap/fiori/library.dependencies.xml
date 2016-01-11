@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<library  version="2.0" name="sap.fiori">
+  <module name="sap/fiori/library.js" size="1901" compressedSize="680" dynamicDependencies="true">
+    <description>Initialization Code and shared classes of library sap.fiori (1.28.1)</description>
+    <requires>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="jquery.sap.resources.js"/>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/fiori/library.properties" size="66">
+  </module>
+</library>

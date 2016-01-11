@@ -1,0 +1,67 @@
+/* NOTE: This file was generated as an optimized version of "library.source.less" for the Theme Designer. */
+
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5)
+ *
+ * (c) Copyright 2009-2015 SAP SE. All rights reserved
+ */
+
+@import "../base/library.less";
+@import "../../../../../sap/ui/core/themes/sap_hcb/global.less";
+/* START "shared.css" */
+/* This CSS inherits rules from default/shared.css */
+/* END "shared.css" */
+
+
+/* START "VBI.less" */
+
+/*...........................................................................*/
+/* LESS for control sap.ui.vbm/VBI.control...................................*/
+/*...........................................................................*/
+
+.vbi-main {
+	background-color: @sapUiChartBackgroundColor;
+}
+
+.vbi-container-vo {
+   border: 1px solid rgba( 255,255,255, 0.6 );
+   background-color: fade(@sapUiChartBackgroundColor, 50%);
+}
+
+.vbi-legend {
+	/* font-family: @sapUiChartLabelFontFamily;	*/
+	font-family: @sapUiFontFamily; /* Fallback for Step 1 */
+	font-weight: @sapUiChartLabelFontWeight;	
+	background-color: fade(@sapUiChartBackgroundColor, 90%);
+}
+
+.vbi-legend > .vbi-legend-header
+{
+   /* font definition of the callout header..................................*/
+   color: @sapUiChartLegendTitleFontColor; 
+   font-size: @sapUiChartLegendTitleFontSize;
+   background-color: @sapUiChartBackgroundColor;
+}
+
+.vbi-legend-content-celltext
+{
+	color: @sapUiChartLegendLabelFontColor;
+	font-size: @sapUiChartLegendLabelFontSize;
+}
+
+.vbi-copyright
+{
+	color:  white;
+	background-color: rgba(0,0,0,0.45);
+	background: -moz-linear-gradient(right,rgba(0,0,0,0.45),rgba(0,0,0,0.45) 80%,rgba(0,0,0,0)); /* Firefox */
+	background: -webkit-linear-gradient(right,rgba(0,0,0,0.45),rgba(0,0,0,0.45) 80%,rgba(0,0,0,0));	/* Chrome, Safari */
+	background: -ms-linear-gradient(right,rgba(0,0,0,0.45),rgba(0,0,0,0.45) 80%,rgba(0,0,0,0));
+	z-index: 4;
+   	a[href] 
+   	{
+    	color: #436976;
+   	}
+}
+
+/* END "VBI.less" */
+

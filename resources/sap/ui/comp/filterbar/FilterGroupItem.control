@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>filterbar/FilterGroupItem</name>
+    <derived/>
+    <documentation>representation for a filter field in the advanced area. Has the same semantical meaning as the new visible in filter bar property.</documentation>
+    <baseType>sap.ui.comp/filterbar/FilterItem</baseType>
+    <properties>
+        <property group="Misc" type="sap.ui.core/string" name="groupTitle">
+            <documentation>the title of the group</documentation>
+        </property>
+        <property group="Misc" type="sap.ui.core/string" name="groupName">
+            <documentation>the name of the group</documentation>
+        </property>
+        <property group="Misc" defaultValue="false" type="sap.ui.core/boolean" name="visibleInAdvancedArea">
+            <documentation>If set to true, this field will be added to the advanced area ( Dynamic Selection) by default.
+This property is mapped against the new visibleInFilterBar property.</documentation>
+        </property>
+    </properties>
+</control>

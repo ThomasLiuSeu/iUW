@@ -1,0 +1,80 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+
+    <name>ObjectPageHeader</name>
+    <author>SAP SE</author>
+    <documentation>
+       Header of an ObjectPage, based on a sap.ui.core.Control.
+       This control allows to specify the basic properties for an object (title / description / picture)
+       As well as define some actions and additional info that will be displayed in a float layout.
+    </documentation>
+    <baseType>sap.ui.core/Control</baseType>
+
+    <properties>
+        <property name="objectImageURI" type="sap.ui.core/string">
+            <documentation>The path that can be used to retrieve a picture</documentation>
+        </property>
+        <property name="objectImageAlt" type="sap.ui.core/string" defaultValue="">
+            <documentation>The string to be used in the alt attribute for the objectImage.
+            See sap.m.Image for more detail on alt property.</documentation>
+        </property>
+        <property name="objectImageDensityAware" type="sap.ui.core/boolean" defaultValue="false">
+                <documentation>If this is set to true, the objectImage will send several requests trying to get the density perfect version of image if this version of image doesn't exist on the server.
+                               By default, this is set to false so the objectImage will be loaded directly saving bandwidth.
+
+                               If pixel perfectness (versus bandwidth) is the key for the application, set this value to true.
+
+                               Default value is false.
+                               See sap.m.Image for more detail on density awareness.
+                   </documentation>
+        </property>
+        <property name="objectTitle" type="sap.ui.core/string">
+            <documentation>The title of the object</documentation>
+        </property>
+        <property name="objectSubtitle" type="sap.ui.core/string">
+            <documentation>The description of the object</documentation>
+        </property>
+        <property name="objectImageShape" type="ObjectPageHeaderPictureShape" defaultValue="Square">
+            <documentation>Information to know if the header picture should be displayed in a square or with a circle shaped mask.</documentation>
+        </property>
+        <property name="isObjectIconAlwaysVisible" type="sap.ui.core/boolean" defaultValue="false">
+            <documentation>Flag to set if the icon should always be visible or if it should be visible only when scrolling.</documentation>
+        </property>
+        <property name="isObjectTitleAlwaysVisible" type="sap.ui.core/boolean" defaultValue="true">
+            <documentation>Flag to set if the title should always be visible or if it should be visible only when scrolling.</documentation>
+        </property>
+        <property name="isObjectSubtitleAlwaysVisible" type="sap.ui.core/boolean" defaultValue="true">
+            <documentation>Flag to set if the title should always be visible or if it should be visible only when scrolling.</documentation>
+        </property>
+        <property name="isActionAreaAlwaysVisible" type="sap.ui.core/boolean" defaultValue="true">
+                <documentation>Flag to set if the action buttons should always be visible or if it should be visible only when scrolling.</documentation>
+        </property>
+        <property name="headerDesign" type="ObjectPageHeaderDesign" defaultValue="Light">
+            <documentation>Represent the design either Light or Dark for the </documentation>
+        </property>
+    </properties>
+    <aggregations>
+        <aggregation cardinality="0..1" name="_overflowButton" type="sap.m/Button" visibility="hidden">
+            <documentation>
+                Internal aggregation for the overflow button in the header.
+            </documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" name="_objectImage" type="sap.ui.core/Control" visibility="hidden">
+            <documentation>
+                Icon for the identifier line.
+            </documentation>
+        </aggregation>
+        <aggregation cardinality="0..1" name="navigationBar" type="sap.m/Bar">
+            <documentation>
+                A navigation bar you can embed in the header properly.
+            </documentation>
+        </aggregation>
+        <aggregation cardinality="0..n" name="actions" type="sap.ui.core/Control" singularName="action">
+            <documentation>
+                List of actions that will be displayed in the header.
+                You can use ObjectPageHeaderActionButton controls for having a different display between the header content and the action sheet.
+                You can add an use ObjectPageHeaderLayoutData that will be used to display a visual separator.
+            </documentation>
+        </aggregation>
+    </aggregations>
+</control>
