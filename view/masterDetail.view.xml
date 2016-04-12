@@ -1,0 +1,309 @@
+<mvc:View
+    controllerName="iUWDemo.controller.masterDetail"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns:customData="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    xmlns="sap.m">
+    <SplitApp id="splitApp" mode="ShowHideMode">
+      <masterPages>
+        <Page id="masterPage_navigation"
+              showHeader="true"
+              showNavButton="true"
+              title="Underwriting Items(5)"
+              enableScrolling="true"
+              navButtonPress="navBack">
+              <headerContent>
+                  <Button id="switchSelectionMode"
+                          icon="sap-icon://multi-select"
+                          press="switchMultiSelect"/>
+              </headerContent>
+              <subHeader>
+                  <Toolbar>
+                    <SearchField id="navList_searchFeld" search="onSearch" placeholder="{i18n>PLACEHOLDER_SEARCH}"/>
+                    <Button id="synchronize"
+                            icon="sap-icon://synchronize"
+                            press="refreshList"/>
+                  </Toolbar>
+              </subHeader>
+              <content>
+                  <List id="navList"
+                        noDataText="{i18n>LABEL_NO_DATA}"
+                        growingTriggerText="{i18n>BTN_MORE}"
+                        selectionChange="onSelectionChange"
+                        mode="SingleSelectMaster"
+                        growingScrollToLoad="true"
+                        growing="false"
+                        updateFinished="navListUpdateFinished"
+                        includeItemInSelection="true">
+                        <items>
+							<ObjectListItem
+								title="Life Capital Product (A20003)"
+								type="Active"
+								press="onListItemPress"
+								number="12">
+								<attributes>
+									<ObjectAttribute text="" />
+									<ObjectAttribute text="Application" />
+								</attributes>
+								<firstStatus>
+									<ObjectStatus
+										text="Violations"/>
+								</firstStatus>
+								<secondStatus>
+									<ObjectStatus
+										text="Referred"/>
+								</secondStatus>
+							</ObjectListItem>
+							<ObjectListItem
+								title="PF120 Combined Unit Linked Insurance 9HG5000S0000"
+								type="Active"
+								press="onListItemPress"
+								number="8">
+								<attributes>
+									<ObjectAttribute text="" />
+									<ObjectAttribute text="Contract" />
+								</attributes>
+								<firstStatus>
+									<ObjectStatus
+										text="Violations"/>
+								</firstStatus>
+								<secondStatus>
+									<ObjectStatus
+										text="Referred"/>
+								</secondStatus>
+							</ObjectListItem>
+							<ObjectListItem
+								title="Franzen Findeisen"
+								type="Active"
+								press="onListItemPress"
+								number="1">
+								<attributes>
+									<ObjectAttribute text="" />
+									<ObjectAttribute text="Policyholder" />
+								</attributes>
+								<firstStatus>
+									<ObjectStatus
+										text="Violations"/>
+								</firstStatus>
+								<secondStatus>
+									<ObjectStatus
+										text="Referred"/>
+								</secondStatus>
+							</ObjectListItem>
+							<ObjectListItem
+								title="Franzen Findeisen"
+								type="Active"
+								press="onListItemPress"
+								number="3">
+								<attributes>
+									<ObjectAttribute text="" />
+									<ObjectAttribute text="Insured Object" />
+								</attributes>
+								<firstStatus>
+									<ObjectStatus
+										text="Violations"/>
+								</firstStatus>
+								<secondStatus>
+									<ObjectStatus
+										text="Referred"/>
+								</secondStatus>
+							</ObjectListItem>
+						</items>
+                  </List>
+              </content>
+
+              <footer id="masterPage_footer">
+                  <Toolbar>
+                    <ToolbarSpacer/>
+
+                       <Button id="sortList"
+                               class="l_uw_footerBar_button"
+                               icon="sap-icon://sort"
+                               customData:action="sort"
+                               press=".openSelectionList"
+                               visible="true"/>
+                       <Button id="filterList"
+                               class="l_uw_footerBar_button"
+                               icon="sap-icon://filter"
+                               customData:action="filter"
+                               press=".openSelectionList"
+                               visible="true"/>
+                       <Button id="modeList"
+                               class="l_uw_footerBar_button"
+                               icon="sap-icon://group-2"
+                               customData:action="mode"
+                               press=".openSelectionList"
+                               visible="true"/>
+                  </Toolbar>
+              </footer>
+        </Page>
+      </masterPages>
+      <detailPages>
+        <Page id="masterPage_detailInfo"
+              showHeader="true"
+              navButtonPress=".navMasterNavList"
+              title="My Underwriting Worklist"
+              enableScrolling="true">
+              <headerContent >
+                    <Switch id="swithBtn" state="true" customTextOn=" " customTextOff=" " change="stateChange">
+                        <layoutData>
+                          <FlexItemData growFactor="1" />
+                        </layoutData>
+                  </Switch>
+              </headerContent>
+              <ObjectHeader
+              	title="Franzen Findeisen"
+              	number="3">
+              	<attributes>
+              		<ObjectAttribute
+              			text="Broker of Record: Franz Beckenbauer">
+              		</ObjectAttribute>
+                    <ObjectAttribute
+                        text="Agent Contact: FRANZ BECKENBAUER">
+                    </ObjectAttribute>
+              	</attributes>
+
+              	<statuses>
+              		<ObjectStatus
+              			text="Violations"
+              			state="None">
+              		</ObjectStatus>
+              		<ObjectStatus
+              			text="Referred"
+              			state="None">
+              		</ObjectStatus>
+              	</statuses>
+              </ObjectHeader>
+
+              <IconTabBar
+				id="idIconTabBarNoIcons"
+				expanded="true"
+				class="sapUiResponsiveContentPadding">
+				<items>
+					<IconTabFilter
+                        id="key1"
+						text="Violations">
+						<Text text="Violations goes here." />
+					</IconTabFilter>
+					<IconTabFilter
+						text="Checklist">
+						<Text text="Checklist go here." />
+					</IconTabFilter>
+					<IconTabFilter
+						text="Evidence">
+						<Text text="Evidence go here." />
+					</IconTabFilter>
+					<IconTabFilter
+                        id="basicInfo"
+						text="Basic Info">
+
+						<f:Form
+							minWidth="1024"
+							maxContainerCols="2"
+							>
+							<f:title>
+								<core:Title text="Premium" />
+							</f:title>
+							<f:layout>
+								<f:ResponsiveGridLayout
+									labelSpanL="3"
+									labelSpanM="3"
+									emptySpanL="4"
+									emptySpanM="4"
+									columnsL="1"
+									columnsM="1" />
+							</f:layout>
+							<f:formContainers>
+								<f:FormContainer>
+									<f:formElements>
+										<f:FormElement label="Premium Breakdown">
+											<f:fields>
+												<Label id="premium" text="63.00 RMB"/>
+											</f:fields>
+										</f:FormElement>
+									</f:formElements>
+								</f:FormContainer>
+							</f:formContainers>
+						</f:Form>
+
+						<f:Form
+							minWidth="1024"
+							maxContainerCols="2"
+							>
+							<f:title>
+								<core:Title text="Address" />
+							</f:title>
+							<f:layout>
+								<f:ResponsiveGridLayout
+									labelSpanL="3"
+									labelSpanM="3"
+									emptySpanL="4"
+									emptySpanM="4"
+									columnsL="1"
+									columnsM="1" />
+							</f:layout>
+							<f:formContainers>
+								<f:FormContainer>
+									<f:formElements>
+										<f:FormElement label="City">
+											<f:fields>
+												<Label text="Shanghai"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Street">
+											<f:fields>
+												<Label text="Chenhui Road"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="State">
+											<f:fields>
+												<Label text="Pudong new area"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Zip Code">
+											<f:fields>
+												<Label text="200103"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Country">
+											<f:fields>
+												<Label text="Shanghai"/>
+											</f:fields>
+										</f:FormElement>
+									</f:formElements>
+								</f:FormContainer>
+							</f:formContainers>
+						</f:Form>
+
+					</IconTabFilter>
+					<IconTabFilter
+						text="Notes">
+						<Text text="Notes goes here." />
+					</IconTabFilter>
+				</items>
+			</IconTabBar>
+              <footer id="detailPage_footer">
+                  <Toolbar id="detailPage_quotations_footer">
+                      <ToolbarSpacer/>
+                      <Button id="buttonAccept"
+                          text="Accept"
+                          customData:action="ACCEPTED"
+                          type="Accept"
+                          press="acceptBtnPress"/>
+                      <Button id="buttonDecline"
+                          text="Decline"
+                          customData:action="DECLINED"
+                          type="Reject"
+                          press="rejectBtnPress" />
+                      <Button id="buttonActionSheet"
+                          icon="sap-icon://action"
+                          press=".openActionList" />
+                  </Toolbar>
+              </footer>
+        </Page>
+      </detailPages>
+  </SplitApp>
+</mvc:View>

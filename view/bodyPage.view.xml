@@ -1,29 +1,94 @@
-<core:View
-    height="100%"
-    xmlns:core="sap.ui.core"
-    xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m"
-    controllerName="view.bodyPage"
-    xmlns:html="http://www.w3.org/1999/xhtml">
-    <Page id="container" title="Standard Premium" showNavButton="true">
+<core:View height="100%" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m" controllerName="iUWDemo.controller.bodyPage"
+    xmlns:customData="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+    xmlns:viz="sap.viz.ui5.controls"
+    xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout">
+    <Page
+    	id="pageBody"
+    	title="Standard Premium (63.00 RMB)"
+    	showNavButton="true"
+    	navButtonPress="navBack">
         <headerContent>
+            <Switch id="swithBtn" state="true"
+                change="stateChange">
+                <layoutData>
+                    <FlexItemData growFactor="1" />
+                </layoutData>
+            </Switch>
         </headerContent>
         <content>
-            <ObjectHeader
-                id="objectHeader"
-                title="">
-               <attributes>
+            <l:Splitter>
+                 <Panel height="0" width="100%">
+                    <layoutData><l:SplitterLayoutData size="33%" resizable="false"/></layoutData>
+                </Panel>
+                <Panel>
+                    <layoutData><l:SplitterLayoutData size="87%" resizable="false"/></layoutData>
+                    <l:VerticalLayout
+                        width="100%"
+                        id="chartContainer">
 
-                </attributes>
-            </ObjectHeader>
+                            <!-- <viz:VizFrame id="idVizFrameLine"></viz:VizFrame> -->
 
-
+                    </l:VerticalLayout>
+                </Panel>
+                <Panel>
+                    <layoutData><l:SplitterLayoutData size="100%" resizable="false"/></layoutData>
+                    <l:VerticalLayout
+                        width="100%">
+                        <core:Icon
+                            id="heartBeatIcon"
+                            src="sap-icon://stethoscope"
+                            width="100%"
+                            size="3em"
+                            color="#031E48"
+                            backgroundColor="#FFFFFF"
+                            press="navIconPress">
+                        </core:Icon>
+                        <core:Icon
+                            id="bodyTemperatureIcon"
+                            src="sap-icon://temperature"
+                            size="3em"
+                            width="100%"
+                            color="#031E48"
+                            backgroundColor="#dddddd"
+                            press="navIconPress">
+                        </core:Icon>
+                        <core:Icon
+                            id="sleepTimeIcon"
+                            src="sap-icon://electronic-medical-record"
+                            size="3em"
+                            width="100%"
+                            color="#031E48"
+                            backgroundColor="#dddddd"
+                            press="navIconPress">
+                        </core:Icon>
+                        <core:Icon
+                            id="bloodPressureIcon"
+                            src="sap-icon://syringe"
+                            size="3em"
+                            width="100%"
+                            color="#031E48"
+                            backgroundColor="#dddddd"
+                            press="navIconPress">
+                        </core:Icon>
+                        <core:Icon
+                            id="healthStatusIcon"
+                            src="sap-icon://table-chart"
+                            size="3em"
+                            width="100%"
+                            color="#031E48"
+                            backgroundColor="#dddddd"
+                            press="navIconPress">
+                        </core:Icon>
+                    </l:VerticalLayout>
+                </Panel>
+            </l:Splitter>
         </content>
         <footer>
             <Toolbar id="planMemberFooterBar">
-                <ToolbarSpacer/>
-                <Button  type="Accept" text="Premium Recalculation"  press="onClickBackBtn" />
-                <Button id="actionButton" icon="sap-icon://action"  press="pressActionSheet" />
+                <ToolbarSpacer />
+                <Button type="Accept" text="Premium Recalculation" press="onRecalculationBtn" />
+                <Button id="actionButton" icon="sap-icon://action" press="pressActionSheet" />
             </Toolbar>
         </footer>
     </Page>

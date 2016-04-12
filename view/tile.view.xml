@@ -1,0 +1,21 @@
+<core:View
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	controllerName="iUWDemo.controller.tile"
+	>
+	<Page title="Tiles" showNavButton="true" showHeader="true">
+		<content>
+			<GenericTile header="iUW" frameType="OneByOne"
+				press="press" size="M"
+				class="tile-format">
+				<tileContent>
+					<TileContent footer="Intelligent UW">
+						<content>
+							
+						</content>
+					</TileContent>
+				</tileContent>
+			</GenericTile>
+		</content>
+	</Page>
+</core:View>

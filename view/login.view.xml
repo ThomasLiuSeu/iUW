@@ -1,33 +1,41 @@
-<mvc:View
-  controllerName="view.login"
-  xmlns:core="sap.ui.core"
-  xmlns:mvc="sap.ui.core.mvc"
-  xmlns="sap.m">
+<core:View
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    controllerName="iUWDemo.controller.login"
+    xmlns:html="http://www.w3.org/1999/xhtml">
 
-  <Page showNavButton="false" showHeader="false">
-    <content>
-      <VBox class="l_login_mainContent" width="100%">
-        <Panel class="l_login_form" id="panelForLogin">
-          <VBox>
-            <Label class="font_app_title" text="Login"
-              textAlign="Center" design="Bold" width="100%" />
-            <Input id="inputTextForUsernameField"
-              class="bg_login_input shadow_login_input fontColor_login_input l_input_login"
-              placeholder="User Name" width="100%" />
-            <Input id="inputPasswordForPasswordField"
-              class="bg_login_input shadow_login_input fontColor_login_input l_input_login"
-              placeholder="Password" type="Password"
-              width="100%" />
-            <Button id="buttonForlogin" class="l_login_btn shadow_login_btn"
-              text="Submit" press="performLogin" type="Emphasized"
-              width="100%" />
-          </VBox>
-        </Panel>
-      </VBox>
-    </content>
-    <!-- <footer> <Bar> <contentMiddle> <Button id="login-submit" text="{i18n>login.submit}"
-      press="performLogin"> </Button> </contentMiddle> </Bar> </footer> -->
-  </Page>
-
-</mvc:View>
-
+	<Page showNavButton="false" showHeader="false">
+		<content>
+			<VBox class="l_login_mainContent" width="100%">
+				<Panel class="l_login_form" id="panelForLogin">
+					<VBox>
+						<Label class="font_app_title" text="Login"
+							textAlign="Center" design="Bold" width="100%" />
+						<Input id="inputTextForUsernameField"
+							class="bg_login_input shadow_login_input fontColor_login_input l_input_login"
+							placeholder="Login" width="100%" />
+						<Input id="inputPasswordForPasswordField"
+							class="bg_login_input shadow_login_input fontColor_login_input l_input_login"
+							placeholder="Password" type="Password"
+							width="100%" />
+						<Input id="comboLanguageSelect"
+							class="bg_login_input shadow_login_input fontColor_login_input l_input_login"
+							placeholder="En - English"
+							width="100%"
+							enabled="false"/>
+						<Button id="buttonForlogin" class="l_login_btn shadow_login_btn"
+							text="Sign In" press="performLogin" type="Emphasized"
+							width="100%" />
+						<Button id="buttonForSignUp" class="shadow_login_btn"
+							text="Sign Up" press="" type="Emphasized"
+							width="100%" />
+					</VBox>
+				</Panel>
+			</VBox>
+		</content>
+		<!-- <footer> <Bar> <contentMiddle> <Button id="login-submit" text="{i18n>login.submit}" 
+			press="performLogin"> </Button> </contentMiddle> </Bar> </footer> -->
+			
+	</Page>
+</core:View>

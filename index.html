@@ -4,98 +4,27 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
 
+        <link href="css/commons.css" rel="stylesheet" />
+
 		<script src="resources/sap-ui-core.js"
 				id="sap-ui-bootstrap"
-				data-sap-ui-libs="sap.viz, sap.m"
-				data-sap-ui-xx-bindingSyntax="complex"
-				data-sap-ui-resourceroots='{"view": "./view"}'
-				data-sap-ui-theme="sap_bluecrystal">
+				data-sap-ui-libs="sap.m, sap.viz"
+				data-sap-ui-theme="sap_bluecrystal"
+				data-sap-ui-resourceroots='{
+		            "iUWDemo": "./"
+		         }'>
 		</script>
 		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
-		
+
 		<script>
-				sap.ui.localResources("view");
-				var app = new sap.m.App("IOTInsurancePlatform",{initialPage:"idView1"});
-				var page1 = sap.ui.view({id:"idView1", viewName:"view.view1", type:sap.ui.core.mvc.ViewType.XML});
-				var page2 = sap.ui.view({id:"idView2", viewName:"view.view2", type:sap.ui.core.mvc.ViewType.XML});
-				app.addPage(page1).addPage(page2);
-				
-				// Create and set domain model to the component
-				//var sServiceUrl = "";
-				//var oModel = new sap.ui.model.odata.ODataModel(sServiceUrl, {
-				//	json: true,
-				//	loadMetadataAsync: true
-				//});
-				//app.setModel(oModel);
-				
-				app.placeAt("content");
-				
-				var myroutes = [
-					{
-						pattern:"",
-						name:"view1",
-						view:"view.view1",
-						viewType:sap.ui.core.mvc.ViewType.XML,
-						targetControl:"IOTInsurancePlatform",
-						clearTarget:true,
-						callback:function(){
-							myCallback(this);
-						}
-					},
-					{
-						pattern:["Health Page","view2"],
-						name:"view2",
-						view:"view.view2",
-						viewType:sap.ui.core.mvc.ViewType.XML,
-						targetControl:"IOT Insurance Platform",
-						clearTarget:true,
-						callback:function(){
-							myCallback(this);
-						}
-					},
-					{
-						pattern:["Car Page","view3"],
-						name:"view3",
-						view:"view.view3",
-						viewType:sap.ui.core.mvc.ViewType.XML,
-						targetControl:"IOT Insurance Platform",
-						clearTarget:true,
-						callback:function(){
-							myCallback(this);
-						}
-					},
-					{
-						pattern:["House Page","view4"],
-						name:"view4",
-						view:"view.view4",
-						viewType:sap.ui.core.mvc.ViewType.XML,
-						targetControl:"IOT Insurance Platform",
-						clearTarget:true,
-						callback:function(){
-							myCallback(this);
-						}
-					},
-				];
-				
-				var myCallback = function($this){
-					var viewId = "id" + $this.name;
-					var view = sap.ui.getCore().byId(viewId);
-					
-					if(view == undefined){
-						view = sap.ui.view({
-							id:viewId,
-							viewName:$this.view,
-							type:$this.viewType
-						})
-						app.addPage(view);
-					}
-					app.to(viewId);
-				}
-				
-				var router = sap.ui.core.routing.Router(myroutes);
-				router.register("appRouter");
-				router.initialize();
+				sap.ui.getCore().attachInit(function () {
+		            new sap.ui.core.ComponentContainer({
+		               name : "iUWDemo"
+		            }).placeAt("content");
+
+		         });
 		</script>
+
 	</head>
 	<body class="sapUiBody" role="application">
 		<div id="content"></div>

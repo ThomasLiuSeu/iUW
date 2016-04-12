@@ -1,0 +1,77 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="iUWDemo.controller.submission" xmlns:smartFilterBar="sap.ui.comp.smartfilterbar" xmlns:filterBar="sap.ui.comp.filterbar" xmlns:customData="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" xmlns:html="http://www.w3.org/1999/xhtml">
+    <Page title="My Underwriting Worklist" showNavButton="true" showHeader="true" navButtonPress="navBack">
+        <content>
+            <filterBar:FilterBar filterBarExpanded="false">
+                <filterBar:filterItems>
+                    <filterBar:FilterItem name="submissionId" label="SubmissionId">
+                        <filterBar:control>
+                            <Input></Input>
+                        </filterBar:control>
+                    </filterBar:FilterItem>
+                </filterBar:filterItems>
+            </filterBar:FilterBar>
+            <Table>
+                <columns>
+                    <Column>
+                        <Label text="Submission #">
+                        </Label>
+                    </Column>
+                    <Column>
+                        <Label text="Account Name">
+                        </Label>
+                    </Column>
+                    <Column>
+                        <Label text="Submission Status">
+                        </Label>
+                    </Column>
+                    <Column>
+                        <Label text="Effective Date">
+                        </Label>
+                    </Column>
+                    <Column>
+                        <Label text="Type">
+                        </Label>
+                    </Column>
+                    <Column>
+                        <Label text="Product">
+                        </Label>
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem type="Navigation" press="rowClick" customData:rowId="603246">
+                        <cells>
+                            <Label text="603246">
+                            </Label>
+                            <Label text="Franzen Findeisen">
+                            </Label>
+                            <Label text="Underwriting">
+                            </Label>
+                            <Label text="Jan 12, 2016">
+                            </Label>
+                            <Label text="Individual">
+                            </Label>
+                            <Label text="Life Product">
+                            </Label>
+                        </cells>
+                    </ColumnListItem>
+                    <ColumnListItem type="Navigation" press="rowClick" customData:rowId="603247">
+                        <cells>
+                            <Label text="603247">
+                            </Label>
+                            <Label text="Paxton Henze">
+                            </Label>
+                            <Label text="Underwriting">
+                            </Label>
+                            <Label text="Jan 12, 2016">
+                            </Label>
+                            <Label text="Individual">
+                            </Label>
+                            <Label text="Life Product">
+                            </Label>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</core:View>
