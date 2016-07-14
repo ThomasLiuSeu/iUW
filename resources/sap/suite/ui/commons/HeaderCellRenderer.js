@@ -1,6 +1,0 @@
-/*!
- * SAP UI development toolkit for HTML5 (SAPUI5) (c) Copyright 2009-2013 SAP AG. All rights reserved
- */
-jQuery.sap.declare("sap.suite.ui.commons.HeaderCellRenderer");sap.suite.ui.commons.HeaderCellRenderer={};
-sap.suite.ui.commons.HeaderCellRenderer.render=function(r,c){var w=c.getWest();var n=c.getNorth();var e=c.getEast();var s=c.getSouth();var t="";var d="";if(w!=null){t+="W";d+=w.getId()+" ";}if(n!=null){t+="N";d+=n.getId()+" ";}if(e!=null){t+="E";d+=e.getId()+" ";}if(s!=null){t+="S";d+=s.getId();}r.write("<div");r.writeControlData(c);r.addClass("sapSuiteUiCommonsHeaderCell");r.addStyle("height",c.getHeight());r.writeStyles();r.writeClasses();r.writeAttribute("role","presentation");r.writeAttribute("aria-live","assertive");r.writeAttribute("aria-describedby",d);r.write(">");if(w!=null){this._renderInnerCell(r,w,t,"sapSuiteHdrCellWest");}if(n!=null){this._renderInnerCell(r,n,t,"sapSuiteHdrCellNorth");}if(e!=null){this._renderInnerCell(r,e,t,"sapSuiteHdrCellEast");}if(s!=null){this._renderInnerCell(r,s,t,"sapSuiteHdrCellSouth");}r.write("</div>");};
-sap.suite.ui.commons.HeaderCellRenderer._renderInnerCell=function(r,c,t,s){r.write("<div");r.addClass(t);r.addClass(s);r.addStyle("height",c.getHeight());r.writeStyles();r.writeClasses();r.writeAttribute("aria-hidden","true");r.write(">");r.renderControl(c.getContent());r.write("</div>");};

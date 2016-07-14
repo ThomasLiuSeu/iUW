@@ -6,7 +6,7 @@ sap.ui.controller("iUWDemo.controller.submission", {
 	
 	rowClick: function(oEvent) {
 		var rowId = oEvent.getSource().getCustomData()[0].getValue("rowId");
-		sap.ui.core.UIComponent.getRouterFor(this).navTo("bodyPage", {submissionId: rowId}, true);
+		sap.ui.core.UIComponent.getRouterFor(this).navTo("masterDetail", {submissionId: rowId, premium: 63}, true);
 	},
 	
 	navBack: function(oEvent) {

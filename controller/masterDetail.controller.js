@@ -63,5 +63,10 @@ sap.ui.controller("iUWDemo.controller.masterDetail", {
 		});
 
 		dialog.open();
+		this.getView().byId("status1").setText("Accepted");
+		this.getView().byId("status2").setText("Accepted");
+		this.getView().byId("status3").setText("Accepted");
+		this.getView().byId("status4").setText("Accepted");
+		this.getView().byId("status5").setText("Accepted");
 	}
 });

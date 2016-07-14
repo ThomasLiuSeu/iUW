@@ -53,7 +53,7 @@
 										text="Violations"/>
 								</firstStatus>
 								<secondStatus>
-									<ObjectStatus
+									<ObjectStatus id="status1"
 										text="Referred"/>
 								</secondStatus>
 							</ObjectListItem>
@@ -71,7 +71,7 @@
 										text="Violations"/>
 								</firstStatus>
 								<secondStatus>
-									<ObjectStatus
+									<ObjectStatus id="status2"
 										text="Referred"/>
 								</secondStatus>
 							</ObjectListItem>
@@ -89,7 +89,7 @@
 										text="Violations"/>
 								</firstStatus>
 								<secondStatus>
-									<ObjectStatus
+									<ObjectStatus id="status3"
 										text="Referred"/>
 								</secondStatus>
 							</ObjectListItem>
@@ -107,7 +107,7 @@
 										text="Violations"/>
 								</firstStatus>
 								<secondStatus>
-									<ObjectStatus
+									<ObjectStatus id="status4"
 										text="Referred"/>
 								</secondStatus>
 							</ObjectListItem>
@@ -172,7 +172,7 @@
               			state="None">
               		</ObjectStatus>
               		<ObjectStatus
-              			text="Referred"
+              			text="Referred" id="status5"
               			state="None">
               		</ObjectStatus>
               	</statuses>

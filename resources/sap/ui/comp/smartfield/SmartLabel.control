@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<control xmlns="http://www.sap.com/sap.ui.library.xsd">
-    <name>smartfield/SmartLabel</name>
-    <derived/>
-    <documentation>is a wrapper for the sap.m.Label and used with the SmartField-Control</documentation>
-    <baseType>sap.m/Label</baseType>
-</control>

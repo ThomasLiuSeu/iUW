@@ -22,9 +22,9 @@ sap.ui.controller("iUWDemo.controller.bodyPage", {
         var swithBtn = sap.ui.getCore().byId(this.createId("swithBtn"));
         swithBtn.setState(false);
 
-        this.renderHeartBeatChart();
+        this.renderHeartBeatChart("Heartbeat");
     },
-    renderHeartBeatChart: function() {
+    renderHeartBeatChart: function(oTitle) {
         var chartContainer = this.getView().byId("chartContainer");
         chartContainer.destroyContent();
         var select = new sap.m.Select("modelSelect", {
@@ -199,7 +199,7 @@ sap.ui.controller("iUWDemo.controller.bodyPage", {
             },
             title: {
                 visible: true,
-                text: 'Heart Beat'
+                text: oTitle
             }
         });
 
@@ -279,7 +279,7 @@ sap.ui.controller("iUWDemo.controller.bodyPage", {
         chartContainer.addContent(form2);
     },
 
-    renderBodyTemperatureChart: function() {
+    renderBodyTemperatureChart: function(oTitle) {
         var chartContainer = this.getView().byId("chartContainer");
         chartContainer.destroyContent();
         var select = new sap.m.Select("modelSelect", {
@@ -438,7 +438,7 @@ sap.ui.controller("iUWDemo.controller.bodyPage", {
             },
             title: {
                 visible: true,
-                text: 'Body Temperature'
+                text: oTitle
             }
         });
 
@@ -643,16 +643,16 @@ sap.ui.controller("iUWDemo.controller.bodyPage", {
                 }
                 switch (iconIdArr[i]) {
                     case "heartBeatIcon":
-                        this.renderHeartBeatChart();
+                        this.renderHeartBeatChart("Heartbeat");
                         break;
                     case "bodyTemperatureIcon":
-                        this.renderBodyTemperatureChart();
+                        this.renderBodyTemperatureChart("Body Temperature");
                         break;
                     case "sleepTimeIcon":
-                        this.renderHeartBeatChart();
+                        this.renderHeartBeatChart("Sleep Time");
                         break;
                     case "bloodPressureIcon":
-                        this.renderBodyTemperatureChart();
+                        this.renderBodyTemperatureChart("Blood Pressure");
                         break;
                     case "healthStatusIcon":
                         this.renderSummary();
@@ -690,7 +690,7 @@ sap.ui.controller("iUWDemo.controller.bodyPage", {
             title: "UW Tips",
             formContainers: [new sap.ui.layout.form.FormContainer({
                 formElements: [new sap.ui.layout.form.FormElement({
-                    fields: [new sap.m.Label({text: "Risk rate :  30% (Compared to standard)", layoutData: new sap.ui.layout.GridData({span: "L3 M3", linebreak :true})})]
+                    fields: [new sap.m.Label({text: "Risk rate :  130% (Compared to normal people)", layoutData: new sap.ui.layout.GridData({span: "L6 M6", linebreak :true})})]
                 })],
                 layoutData : new sap.ui.layout.GridData({span: "L12 M12"})
             })],
@@ -706,8 +706,8 @@ sap.ui.controller("iUWDemo.controller.bodyPage", {
 
     onRecalculationBtn: function(oEvent) {
         var pageBody = sap.ui.getCore().byId(this.createId("pageBody"));
-        pageBody.setTitle("Standard Premium (55.00 RMB)");
+        pageBody.setTitle("Standard Premium (87.00 RMB)");
         sap.m.MessageToast.show("The premium has been recalculated");
-        this.premium = "55";
+        this.premium = "87";
     }
 })

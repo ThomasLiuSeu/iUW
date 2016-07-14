@@ -1,6 +1,0 @@
-/*!
- * SAP UI development toolkit for HTML5 (SAPUI5)
-
-(c) Copyright 2014-2015 SAP SE. All rights reserved
- */
-sap.ui.define(["jquery.sap.global","sap/ui/fl/changeHandler/RemoveField","sap/ui/fl/changeHandler/RemoveGroup","sap/ui/fl/changeHandler/RenameField","sap/ui/fl/changeHandler/RenameGroup","sap/ui/fl/changeHandler/AddField","sap/ui/fl/changeHandler/AddGroup","sap/ui/fl/changeHandler/OrderFields","sap/ui/fl/changeHandler/OrderGroups","sap/ui/fl/changeHandler/HideControl","sap/ui/fl/changeHandler/UnhideControl","sap/ui/fl/changeHandler/MoveFields","sap/ui/fl/changeHandler/MoveGroups"],function(q,R,a,b,c,A,d,O,e,H,U,M,f){"use strict";var S={removeField:{changeType:"removeField",changeHandler:R},removeGroup:{changeType:"removeGroup",changeHandler:a},renameField:{changeType:"renameField",changeHandler:b},renameGroup:{changeType:"renameGroup",changeHandler:c},addField:{changeType:"addField",changeHandler:A},addGroup:{changeType:"addGroup",changeHandler:d},orderFields:{changeType:"orderFields",changeHandler:O},orderGroups:{changeType:"orderGroups",changeHandler:e},hideControl:{changeType:"hideControl",changeHandler:H},unhideControl:{changeType:"unhideControl",changeHandler:U},moveFields:{changeType:"moveFields",changeHandler:M},moveGroups:{changeType:"moveGroups",changeHandler:f}};return S;},true);
